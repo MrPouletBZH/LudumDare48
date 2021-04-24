@@ -3,12 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - JumpCollectible
+  - DashCollectible
+  - ScriptHolder
+  - CompletionistCollectible
+  - DashMovingPlatform
+  - JumpMovingPlatform
+  - KillingObject
+  - InGameMenu
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Platform
   - Water
   - UI
   - 
