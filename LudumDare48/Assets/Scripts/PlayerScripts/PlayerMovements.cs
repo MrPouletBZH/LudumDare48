@@ -27,7 +27,7 @@ public class PlayerMovements : MonoBehaviour
     private bool isDashing = false;
     private bool dashAllowed = true;
     private bool directionBlocked = false;
-    public static bool onMenu = false;
+    public bool onMenu = true;
     public static bool onDialogue = false;
     public static bool landing = false;
 
