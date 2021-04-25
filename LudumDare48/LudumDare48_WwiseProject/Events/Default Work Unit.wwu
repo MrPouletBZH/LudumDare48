@@ -381,6 +381,20 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="KillAllMusic" ID="{D9EC27D6-14F5-4E86-BAAE-E3917EE40B72}">
+							<ChildrenList>
+								<Action Name="" ID="{10347F1C-AA49-41D6-A129-0F22C46220A0}" ShortID="1003775061">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{CE50D067-FA79-42C9-BEA5-13F9BD5B78D5}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

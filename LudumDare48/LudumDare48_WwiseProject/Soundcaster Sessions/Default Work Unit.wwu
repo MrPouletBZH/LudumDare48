@@ -84,7 +84,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
-						<CurrentSwitchRef Name="lava" ID="{A05DD4FE-3AB3-4AAA-B28D-78D3FAC0F040}"/>
+						<CurrentSwitchRef Name="chainsaw" ID="{289E8E66-1556-4D34-8B1C-00D18CE8979F}"/>
 						<CurrentSwitchRef Name="lv01" ID="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
