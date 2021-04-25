@@ -26,6 +26,10 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="danger" ID="{EB76555A-A6BF-40DB-B2A0-02BF62792C3B}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="outof_dash" ID="{49B68DF8-C05B-4FA0-BCFB-388569717095}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 							<Position X="1" Y="1"/>
 						</Module>
@@ -79,9 +83,9 @@
 						<CurrentStateRef Name="World02" ID="{AB3BE110-D711-4B48-A9F1-1E62678AC2E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Bonus" ID="{5CDCDA7D-0C53-4462-B489-EE1FAC7586F3}"/>
-						<CurrentSwitchRef Name="chainsaw" ID="{289E8E66-1556-4D34-8B1C-00D18CE8979F}"/>
-						<CurrentSwitchRef Name="lv03" ID="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}"/>
+						<CurrentSwitchRef Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
+						<CurrentSwitchRef Name="lava" ID="{A05DD4FE-3AB3-4AAA-B28D-78D3FAC0F040}"/>
+						<CurrentSwitchRef Name="lv01" ID="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
