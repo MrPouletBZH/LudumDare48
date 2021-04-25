@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7657054866197529979}
   - component: {fileID: 7657054866197529976}
   - component: {fileID: 6644803529520054381}
+  - component: {fileID: 6163950731734399864}
   m_Layer: 0
   m_Name: CircularSaw
   m_TagString: KillingObject
@@ -120,3 +121,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6163950731734399864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7657054866197529862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcb12acb3cb89542a009eb006b83545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f4e47e3b8e83a7a41a72fc68b7baca58,
+      type: 2}
