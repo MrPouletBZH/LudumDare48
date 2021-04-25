@@ -114,7 +114,7 @@ public class PlayerMovements : MonoBehaviour
         directionBlocked = false;
         isDashing = false;
         
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
         dashAllowed = true;
     }
 
@@ -135,8 +135,7 @@ public class PlayerMovements : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "KillingObject") {
-            inGameMenu.SetActive(true);
-            Time.timeScale = 0;
+            inGameMenu.GetComponent<InGameMenu>().RestartLevel();
         }
             
     }

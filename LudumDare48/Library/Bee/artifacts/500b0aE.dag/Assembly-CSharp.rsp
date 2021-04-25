@@ -344,6 +344,7 @@
 "Assets/Scripts/Platforms/SetParentPlatform.cs"
 "Assets/Scripts/PlayerScripts/AthJumpDashAvailables.cs"
 "Assets/Scripts/PlayerScripts/FlipSprite.cs"
+"Assets/Scripts/PlayerScripts/PlayerAnimationController.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovements.cs"
 -langversion:8.0
 
