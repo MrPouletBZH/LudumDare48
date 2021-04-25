@@ -26,4 +26,5 @@ public class DashMovingPlatform : MonoBehaviour
         else
             currentTarget = transform1.position;
     }
+    
 }

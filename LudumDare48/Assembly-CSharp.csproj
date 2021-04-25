@@ -36,13 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovements.cs" />
-     <Compile Include="Assets\Scripts\PlayerScripts\FlipSprite.cs" />
-     <Compile Include="Assets\Scripts\Completionist.cs" />
-     <Compile Include="Assets\Scripts\Platforms\DashMovingPlatform.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\AthJumpDashAvailables.cs" />
-     <Compile Include="Assets\Scripts\Menus\InGameMenu.cs" />
+     <Compile Include="Assets\Scripts\Platforms\DoorScript.cs" />
      <Compile Include="Assets\Scripts\Platforms\ConveyorBelt.cs" />
+     <Compile Include="Assets\Scripts\Completionist.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovements.cs" />
+     <Compile Include="Assets\Scripts\Menus\InGameMenu.cs" />
+     <Compile Include="Assets\Scripts\Platforms\ExitScript.cs" />
+     <Compile Include="Assets\Scripts\Platforms\DashMovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Platforms\SetParentPlatform.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\FlipSprite.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerAnimationController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

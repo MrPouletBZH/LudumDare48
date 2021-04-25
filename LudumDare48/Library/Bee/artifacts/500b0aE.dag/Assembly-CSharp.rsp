@@ -339,8 +339,12 @@
 "Assets/Scripts/Menus/InGameMenu.cs"
 "Assets/Scripts/Platforms/ConveyorBelt.cs"
 "Assets/Scripts/Platforms/DashMovingPlatform.cs"
+"Assets/Scripts/Platforms/DoorScript.cs"
+"Assets/Scripts/Platforms/ExitScript.cs"
+"Assets/Scripts/Platforms/SetParentPlatform.cs"
 "Assets/Scripts/PlayerScripts/AthJumpDashAvailables.cs"
 "Assets/Scripts/PlayerScripts/FlipSprite.cs"
+"Assets/Scripts/PlayerScripts/PlayerAnimationController.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovements.cs"
 -langversion:8.0
 

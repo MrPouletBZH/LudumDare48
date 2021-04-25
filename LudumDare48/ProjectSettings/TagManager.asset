@@ -12,6 +12,7 @@ TagManager:
   - JumpMovingPlatform
   - KillingObject
   - InGameMenu
+  - Exit
   layers:
   - Default
   - TransparentFX
