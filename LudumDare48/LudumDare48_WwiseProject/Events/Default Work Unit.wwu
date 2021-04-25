@@ -144,6 +144,16 @@
 					<ChildrenList>
 						<Event Name="InitMusic" ID="{AF849FF6-FC2B-43DA-8A70-922B1291FCD3}">
 							<ChildrenList>
+								<Action Name="" ID="{9AE4D1A9-6884-4FC6-91DD-24C00C8AE6D4}" ShortID="763159057">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KillAllMusic" ID="{D9EC27D6-14F5-4E86-BAAE-E3917EE40B72}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{EC278E0E-F1D2-44FE-9CF7-4A31EED2A217}" ShortID="844366334">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -381,6 +391,20 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Event Name="KillAllMusic" ID="{D9EC27D6-14F5-4E86-BAAE-E3917EE40B72}">
+							<ChildrenList>
+								<Action Name="" ID="{10347F1C-AA49-41D6-A129-0F22C46220A0}" ShortID="1003775061">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{CE50D067-FA79-42C9-BEA5-13F9BD5B78D5}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

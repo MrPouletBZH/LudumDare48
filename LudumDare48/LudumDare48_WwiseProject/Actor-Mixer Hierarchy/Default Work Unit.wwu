@@ -14,7 +14,7 @@
 									<ObjectRef Name="lava" ID="{A05DD4FE-3AB3-4AAA-B28D-78D3FAC0F040}" WorkUnitID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+									<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Danger" ID="{E8D37D27-797F-4909-8629-90DC5C04AF09}" WorkUnitID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}"/>
@@ -27,7 +27,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52F98F8D-BB21-4F88-AD05-144F45D8C5E5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+											<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -50,7 +50,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52F98F8D-BB21-4F88-AD05-144F45D8C5E5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+											<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -73,7 +73,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52F98F8D-BB21-4F88-AD05-144F45D8C5E5}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+											<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -132,7 +132,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52F98F8D-BB21-4F88-AD05-144F45D8C5E5}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+									<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -155,7 +155,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52F98F8D-BB21-4F88-AD05-144F45D8C5E5}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+									<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -185,7 +185,7 @@
 									<ObjectRef Name="Bonus" ID="{5CDCDA7D-0C53-4462-B489-EE1FAC7586F3}" WorkUnitID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
+									<ObjectRef Name="SFX" ID="{680DBD63-E0AD-4951-833C-89534E56DDCC}" WorkUnitID="{3D3F21C8-C176-4A9F-B4E8-7685D06916C9}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
 									<ObjectRef Name="Collectibles" ID="{303961B8-D450-4750-A24F-71ABDB1B1488}" WorkUnitID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}"/>

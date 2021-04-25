@@ -26,6 +26,10 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="w3l1" ID="{A4E4A6CB-F243-4B6A-8F65-241C11B75196}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="danger" ID="{EB76555A-A6BF-40DB-B2A0-02BF62792C3B}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -46,6 +50,10 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="w3l2" ID="{96A12F1F-60F7-4AC9-B0BE-214BFBF1494B}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="dash" ID="{504B156D-F3AC-4CDB-90E0-D7157E295364}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 							<Position X="2" Y="1"/>
 						</Module>
@@ -60,6 +68,10 @@
 						<Module>
 							<ObjectRef Name="w2l3" ID="{7440CDE9-F846-4D74-8092-71E77F96FE64}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="w3l3" ID="{2D5A7D26-DAF4-4176-BB8A-495B5201E567}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="jump" ID="{93DF1712-1925-4B65-885D-F04A0BD5A068}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
@@ -80,12 +92,12 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="World02" ID="{AB3BE110-D711-4B48-A9F1-1E62678AC2E5}"/>
+						<CurrentStateRef Name="World03" ID="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
 						<CurrentSwitchRef Name="lava" ID="{A05DD4FE-3AB3-4AAA-B28D-78D3FAC0F040}"/>
-						<CurrentSwitchRef Name="lv01" ID="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}"/>
+						<CurrentSwitchRef Name="lv03" ID="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
