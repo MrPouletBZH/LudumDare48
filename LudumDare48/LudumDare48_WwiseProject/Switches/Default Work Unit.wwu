@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Collectibles" ID="{303961B8-D450-4750-A24F-71ABDB1B1488}">
+					<ChildrenList>
+						<Switch Name="Jump" ID="{84B1226D-0E9C-469E-8794-83ECF451A683}"/>
+						<Switch Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
+						<Switch Name="Bonus" ID="{5CDCDA7D-0C53-4462-B489-EE1FAC7586F3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Level" ID="{8F994C13-58D7-4CE6-A427-398245D74FDD}">
+					<ChildrenList>
+						<Switch Name="lv01" ID="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}"/>
+						<Switch Name="lv02" ID="{24BBAB5D-C747-49AD-B981-B3EC0AAD76BD}"/>
+						<Switch Name="lv03" ID="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Danger" ID="{E8D37D27-797F-4909-8629-90DC5C04AF09}">
+					<ChildrenList>
+						<Switch Name="pike" ID="{219E9353-459E-434C-9E63-8B299D373265}"/>
+						<Switch Name="chainsaw" ID="{289E8E66-1556-4D34-8B1C-00D18CE8979F}"/>
+						<Switch Name="lava" ID="{A05DD4FE-3AB3-4AAA-B28D-78D3FAC0F040}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

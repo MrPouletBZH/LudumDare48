@@ -6,6 +6,8 @@ public class PlayerMovements : MonoBehaviour
 {
     public Rigidbody2D rb;
     private BoxCollider2D bxCllder;
+    private CapsuleCollider2D plgClldr;
+    private Collider2D currentCollider;
     [SerializeField] private LayerMask platformLayer = new LayerMask();
 
     public static float movement;
@@ -30,6 +32,7 @@ public class PlayerMovements : MonoBehaviour
     public bool onMenu = true;
     public static bool onDialogue = false;
     public static bool landing = false;
+    public float crouchingModifier;
 
     private GameObject[] dashMovingPlatform;
     private GameObject[] jumpMovingPlatform;
@@ -41,6 +44,8 @@ public class PlayerMovements : MonoBehaviour
         dashMovingPlatform = GameObject.FindGameObjectsWithTag("DashMovingPlatform");
         jumpMovingPlatform = GameObject.FindGameObjectsWithTag("JumpMovingPlatform");
         bxCllder = transform.GetComponent<BoxCollider2D>();
+        plgClldr = transform.GetComponent<CapsuleCollider2D>();
+        currentCollider = plgClldr;
         originalGravityScale = rb.gravityScale;
     }
     void Update(){
@@ -48,6 +53,17 @@ public class PlayerMovements : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)){
             inGameMenu.SetActive(true);
             Time.timeScale = 0;
+        }
+
+        if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0){
+            bxCllder.enabled = true;
+            currentCollider = bxCllder;
+            plgClldr.enabled = false;
+        }
+        else{
+            plgClldr.enabled = true;
+            currentCollider = plgClldr;
+            bxCllder.enabled = false;
         }
 
         isGrounded = Grounded();
@@ -84,12 +100,16 @@ public class PlayerMovements : MonoBehaviour
             isJumping = false;    
     }
     void FixedUpdate() {
-        if(!onMenu && !onDialogue && !landing)
-            transform.position += new Vector3(movement*speed,0,0)*Time.deltaTime;
+        if(!onMenu && !onDialogue && !landing) {
+            if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0)
+                transform.position += new Vector3(movement*speed,0,0)*Time.deltaTime*crouchingModifier;
+            else
+                transform.position += new Vector3(movement*speed,0,0)*Time.deltaTime;
+        }
     }
 
     private bool Grounded() {
-        bool retour = Physics2D.BoxCast(bxCllder.bounds.center, bxCllder.bounds.size, 0f, Vector2.down, .01f, platformLayer).collider!=null; 
+        bool retour = Physics2D.BoxCast(currentCollider.bounds.center, currentCollider.bounds.size, 0f, Vector2.down, .01f, platformLayer).collider!=null; 
         if (retour&&rb.velocity.y==0)
             doubleJumpAllowed = true;
         return retour && doubleJumpAllowed;
@@ -114,7 +134,7 @@ public class PlayerMovements : MonoBehaviour
         directionBlocked = false;
         isDashing = false;
         
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.02f);
         dashAllowed = true;
     }
 

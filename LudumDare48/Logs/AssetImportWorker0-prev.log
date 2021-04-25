@@ -15,11 +15,11 @@ C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58858
+53502
 Successfully changed project path to: C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48
 C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 50.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 49.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.4f1 (4cd64a618c1b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.1.4f1/Editor/Data/Resources/UnitySubsystems
@@ -35,45 +35,163 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2021.1.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56560
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001665 seconds.
+Registered in 0.001683 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 39.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 39.70 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.047 seconds
+- Completed reload, in  0.980 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005469 seconds.
+Registered in 0.003739 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 38.68 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 37.67 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+DisplayProgressbar: Populating Wwise Picker
 Mono: successfully reloaded assembly
-- Completed reload, in  1.099 seconds
+- Completed reload, in  1.118 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2174 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.7 MB.
-System memory in use after: 99.8 MB.
+Unloading 2175 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 99.9 MB.
+System memory in use after: 100.0 MB.
 
 Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 2588.
-Total: 2.926800 ms (FindLiveObjects: 0.216500 ms CreateObjectMapping: 0.050900 ms MarkObjects: 2.589600 ms  DeleteObjects: 0.069000 ms)
+Total: 3.358200 ms (FindLiveObjects: 0.217800 ms CreateObjectMapping: 0.050200 ms MarkObjects: 2.993300 ms  DeleteObjects: 0.095900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/TestsLevels/SceneTest2.unity
-  artifactKey: Guid(b589b3178be7c544e9fa3bb7106f6ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TestsLevels/SceneTest2.unity using Guid(b589b3178be7c544e9fa3bb7106f6ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba3c166fa51990067e23feefd608a341') in 0.027093 seconds 
+  path: Assets/Scenes/TestsLevels
+  artifactKey: Guid(09c7265f9d0e84f439bd1c9ccbfeea9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TestsLevels using Guid(09c7265f9d0e84f439bd1c9ccbfeea9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15716110fa6778c04e0aede9099f7708') in 0.016987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.286482 seconds.
+  path: Assets/Prefabs/player.prefab
+  artifactKey: Guid(88cc6b41ebcdbc9428078ade3f12111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/player.prefab using Guid(88cc6b41ebcdbc9428078ade3f12111a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (player) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+The Animator Controller (player) you have used is not valid. Animations will not play
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+
+ -> (artifact id: 'cef0f289c8e1837d81cddb161097cb50') in 0.080882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.080983 seconds.
+  path: Assets/Prefabs/LevelElements
+  artifactKey: Guid(6c06a2a89ec63924eade23eab555f28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements using Guid(6c06a2a89ec63924eade23eab555f28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8aa523e2d612518484c0af6e6d8bdbf') in 0.012897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.509904 seconds.
+  path: Assets/Prefabs/LevelElements/CircularSaw.prefab
+  artifactKey: Guid(2225c14f610033a48ad9aaf4696f31ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/CircularSaw.prefab using Guid(2225c14f610033a48ad9aaf4696f31ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c9f41fd930341cbe4eca9762109510') in 0.022034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Prefabs/LevelElements/ConveyorBelt.prefab
+  artifactKey: Guid(b36e95e0b13f44e42a5860201e81a992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/ConveyorBelt.prefab using Guid(b36e95e0b13f44e42a5860201e81a992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38acadca458138bf1c860a58927b9f9b') in 0.029636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Prefabs/LevelElements/CompletionistCollectible.prefab
+  artifactKey: Guid(a3020244674c6874cad67fc59842691d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/CompletionistCollectible.prefab using Guid(a3020244674c6874cad67fc59842691d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4cd29eb3b52de5c745cdcc67cef6c4') in 0.029825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Prefabs/LevelElements/SortieSceneTrigger.prefab
+  artifactKey: Guid(d42027784ae4fa841a3bd04b1b00be87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/SortieSceneTrigger.prefab using Guid(d42027784ae4fa841a3bd04b1b00be87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f9e7d7dbbb2a06eaf5f8e0dd969b43') in 0.028592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Prefabs/LevelElements/DashCollectible.prefab
+  artifactKey: Guid(caa4bac6b70fce742838a83d9f7b17e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/DashCollectible.prefab using Guid(caa4bac6b70fce742838a83d9f7b17e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32fabf61ea4f3d288f0205a78968b9e') in 0.027699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Prefabs/LevelElements/ClassicPlatform.prefab
+  artifactKey: Guid(8d1feb3bb6948c34da0eb877806dc69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/ClassicPlatform.prefab using Guid(8d1feb3bb6948c34da0eb877806dc69f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593361e5f5088441a71586a56cc2f22b') in 0.016989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Prefabs/LevelElements/Door.prefab
+  artifactKey: Guid(58dfc7593ab0e7447a21f025aa70204f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/Door.prefab using Guid(58dfc7593ab0e7447a21f025aa70204f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe2fb1251a62480c2486a7edf3368fb') in 0.012198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Prefabs/LevelElements/Lava.prefab
+  artifactKey: Guid(54bde19a8756b8f49b93bf22823b9428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/Lava.prefab using Guid(54bde19a8756b8f49b93bf22823b9428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5a2b6cdbbb2556c9a37c3e003ec381e') in 0.011838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Prefabs/LevelElements/DashMovingPlatform.prefab
+  artifactKey: Guid(f668107ab996f1749bf7af1f83b6df62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/DashMovingPlatform.prefab using Guid(f668107ab996f1749bf7af1f83b6df62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '100b8e400c3d95755a2aeeb7fb28ab47') in 0.013134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Prefabs/LevelElements/ScriptHolder.prefab
+  artifactKey: Guid(1cc84260577a6c746a17ef5ab72cea51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/ScriptHolder.prefab using Guid(1cc84260577a6c746a17ef5ab72cea51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36379c408c55fe36386d58e8364a5b45') in 0.007386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/LevelElements/JumpMovingPlatform.prefab
+  artifactKey: Guid(86f51e4c6610bcd4dbe803aa4ba07f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/JumpMovingPlatform.prefab using Guid(86f51e4c6610bcd4dbe803aa4ba07f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f96d63ec1dc11f52e247030c4a713c0') in 0.011123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Prefabs/LevelElements/JumpCollectible.prefab
+  artifactKey: Guid(c2f8cea67162c8e4d92bb30545e594de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/JumpCollectible.prefab using Guid(c2f8cea67162c8e4d92bb30545e594de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e636576d608a8c6d85dc266318b024d') in 0.011069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Prefabs/LevelElements/Spike.prefab
+  artifactKey: Guid(73afd8faa9b225b40a3cf88f487548d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/LevelElements/Spike.prefab using Guid(73afd8faa9b225b40a3cf88f487548d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd7606aa8d626e6d5f9cc3778ad3d77c') in 0.010542 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
