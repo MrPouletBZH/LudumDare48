@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{72fa02c8-e981-5a70-faa1-2d4b12013c25}</ProjectGuid>
+    <ProjectGuid>{687a5b9c-614f-a5e4-2ffa-02133e98357b}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>AK.Wwise.Unity.Timeline.Editor</AssemblyName>
@@ -281,7 +281,7 @@
         <HintPath>C:/Program Files/Unity/2021.1.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -629,36 +629,36 @@
         <HintPath>C:/Program Files/Unity/2021.1.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AK.Wwise.Unity.API.csproj">
-      <Project>{4aa34151-26a8-d30a-5d93-65eea34d42f8}</Project>
+      <Project>{260d2a6d-3138-4c58-0c09-c0ccbf8ba01b}</Project>
       <Name>AK.Wwise.Unity.API</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.Timeline.csproj">
-      <Project>{36c2185f-4c7d-8407-c4a4-7ea4afd9b7a0}</Project>
+      <Project>{b3e05070-fe7e-6697-464e-b10c0a6a1620}</Project>
       <Name>AK.Wwise.Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.Editor.csproj">
-      <Project>{767a4e34-01df-1314-4b7f-496560f44453}</Project>
+      <Project>{fad08e4a-c1fd-9cb0-3444-7d7bd2a3aa40}</Project>
       <Name>AK.Wwise.Unity.API.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.WwiseTypes.csproj">
-      <Project>{b2a2da2c-1aba-cddd-67c3-1e1fe0e66fce}</Project>
+      <Project>{bf766c2d-a919-104d-06da-65ff2e42769c}</Project>
       <Name>AK.Wwise.Unity.API.WwiseTypes</Name>
     </ProjectReference>
   </ItemGroup>

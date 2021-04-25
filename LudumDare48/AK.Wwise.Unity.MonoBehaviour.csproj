@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2b10e962-2915-e175-a717-7827e371abe3}</ProjectGuid>
+    <ProjectGuid>{e6fe8fde-6882-cd73-252e-89a49d0e992f}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>AK.Wwise.Unity.MonoBehaviour</AssemblyName>
@@ -669,19 +669,19 @@
         <HintPath>C:/Program Files/Unity/2021.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/paulm/Documents/GitHub/LudumDare48/LudumDare48/LudumDare48/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AK.Wwise.Unity.API.csproj">
-      <Project>{4aa34151-26a8-d30a-5d93-65eea34d42f8}</Project>
+      <Project>{260d2a6d-3138-4c58-0c09-c0ccbf8ba01b}</Project>
       <Name>AK.Wwise.Unity.API</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.WwiseTypes.csproj">
-      <Project>{b2a2da2c-1aba-cddd-67c3-1e1fe0e66fce}</Project>
+      <Project>{bf766c2d-a919-104d-06da-65ff2e42769c}</Project>
       <Name>AK.Wwise.Unity.API.WwiseTypes</Name>
     </ProjectReference>
   </ItemGroup>
