@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0E729378-BAE0-4BE8-BD49-5755D9CC93C6}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0E729378-BAE0-4BE8-BD49-5755D9CC93C6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0E729378-BAE0-4BE8-BD49-5755D9CC93C6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test" ID="{895812AA-32EF-4588-A248-6889EFCC0B82}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="InitMusic" ID="{AF849FF6-FC2B-43DA-8A70-922B1291FCD3}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_slide_up" ID="{F47AEC2C-BFE0-4F2E-8201-2BA9EC3E5FA7}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_ok" ID="{06D9B016-30CA-4158-BA97-C119A374BA81}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_chainsaw" ID="{69E86843-54B1-4B21-B525-861842528315}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_outof_dash" ID="{49B68DF8-C05B-4FA0-BCFB-388569717095}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_collectible" ID="{F62249D2-1AC3-46ED-BD69-A523F209C0D2}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_lava" ID="{C454E613-06E4-4C26-B522-EFAE7DA1FC79}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_dash" ID="{504B156D-F3AC-4CDB-90E0-D7157E295364}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_death" ID="{131CBB8C-FF4F-430A-9AD9-510672BE49FD}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_pike" ID="{AE18F81A-06B5-458E-872F-4A8B3DD5188C}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_jump" ID="{93DF1712-1925-4B65-885D-F04A0BD5A068}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_outof_jump" ID="{9A3262A8-4948-4F19-9295-860097581641}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_slide_side" ID="{311A0519-E4EC-46BB-85F5-2E75A668EE70}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_ui_back" ID="{A0AFEFC1-E2DD-40E1-A395-F211877F00BF}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Title" ID="{41C6FB5C-F305-4407-825F-8F86602B11FE}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Bonus" ID="{5CDCDA7D-0C53-4462-B489-EE1FAC7586F3}"/>
+						<CurrentSwitchRef Name="lv03" ID="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
