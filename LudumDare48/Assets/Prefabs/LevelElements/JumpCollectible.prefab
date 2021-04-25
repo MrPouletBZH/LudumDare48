@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6398546372128819912}
   - component: {fileID: 6398546372128819919}
   - component: {fileID: 6398546372128819918}
+  - component: {fileID: -1788949704398690127}
   m_Layer: 0
   m_Name: JumpCollectible
   m_TagString: JumpCollectible
@@ -110,3 +111,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &-1788949704398690127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6398546372128819917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcb12acb3cb89542a009eb006b83545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ebd42d3040ca36248866d5d1fe930e4d,
+      type: 2}

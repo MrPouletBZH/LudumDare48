@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2633745032282470480}
   - component: {fileID: 2633745032282470481}
   - component: {fileID: 2633745032282470482}
+  - component: {fileID: -3600130527523138696}
   m_Layer: 0
   m_Name: DashCollectible
   m_TagString: DashCollectible
@@ -110,3 +111,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &-3600130527523138696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633745032282470483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bcb12acb3cb89542a009eb006b83545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 530f01249d284c14ca26fabcd1c4b38b,
+      type: 2}

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69bffb0542985064292bb92f95300bae, type: 3}
+  m_Name: 303961B8-D450-4750-A24F-71ABDB1B1488
+  m_EditorClassIdentifier: 
+  objectName: Collectibles
+  id: 4237018540
+  guid: 303961B8-D450-4750-A24F-71ABDB1B1488

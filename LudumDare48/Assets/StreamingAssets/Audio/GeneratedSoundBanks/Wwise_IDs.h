@@ -18,7 +18,6 @@ namespace AK
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID INITMUSIC = 2984404912U;
         static const AkUniqueID JUMP = 3833651337U;
-        static const AkUniqueID KILLALLMUSIC = 659920515U;
         static const AkUniqueID OUTOF_DASH = 2054631987U;
         static const AkUniqueID OUTOF_JUMP = 303116883U;
         static const AkUniqueID PLAY_COLLECTIBLE = 661747096U;
@@ -105,8 +104,6 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
-        static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

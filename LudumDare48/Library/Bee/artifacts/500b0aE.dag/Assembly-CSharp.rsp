@@ -336,7 +336,9 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Completionist.cs"
+"Assets/Scripts/InitMusic.cs"
 "Assets/Scripts/Menus/InGameMenu.cs"
+"Assets/Scripts/MusicTrigger.cs"
 "Assets/Scripts/Platforms/ConveyorBelt.cs"
 "Assets/Scripts/Platforms/DashMovingPlatform.cs"
 "Assets/Scripts/Platforms/DoorScript.cs"
@@ -346,6 +348,8 @@
 "Assets/Scripts/PlayerScripts/FlipSprite.cs"
 "Assets/Scripts/PlayerScripts/PlayerAnimationController.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovements.cs"
+"Assets/Scripts/PlayerScripts/SoundManager.cs"
+"Assets/Scripts/SoundMaterial.cs"
 -langversion:8.0
 
 /deterministic

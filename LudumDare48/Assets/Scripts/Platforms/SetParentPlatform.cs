@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class SetParentPlatform : MonoBehaviour
 {
+    public bool activate;
     void OnCollisionEnter2D(Collision2D other) {
-        other.collider.transform.SetParent(transform);
+        if(other.gameObject.tag == "Player" && activate)
+            other.collider.transform.SetParent(transform);
     }
     private void OnCollisionExit2D(Collision2D other) {
-        other.collider.transform.SetParent(null);
+        if(other.gameObject.tag == "Player" && activate)
+            other.collider.transform.SetParent(null);
     }
 }
