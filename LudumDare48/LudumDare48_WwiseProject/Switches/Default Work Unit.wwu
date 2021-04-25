@@ -17,6 +17,13 @@
 						<Switch Name="lv03" ID="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Danger" ID="{E8D37D27-797F-4909-8629-90DC5C04AF09}">
+					<ChildrenList>
+						<Switch Name="pike" ID="{219E9353-459E-434C-9E63-8B299D373265}"/>
+						<Switch Name="chainsaw" ID="{289E8E66-1556-4D34-8B1C-00D18CE8979F}"/>
+						<Switch Name="lava" ID="{A05DD4FE-3AB3-4AAA-B28D-78D3FAC0F040}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
