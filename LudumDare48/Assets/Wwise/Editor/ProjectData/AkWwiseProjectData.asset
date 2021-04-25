@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 40b38485b475f54bb3310f7b981f5c29
     GuidInternal: 
-    m_lastTime: -8585822661930207964
+    m_lastTime: -8585822490401007732
     List:
     - name: Collectibles
       guid: 09d8efc5a3b8404988b3951f31dc69e2
@@ -113,6 +113,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: danger
+      guid: 5a5576ebbfa6db40b2a002bf62792c3b
+      id: 4174463524
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Level
+        ObjectType: 4
+        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
+      - ElementName: danger
+        ObjectType: 3
+        guid: 5a5576ebbfa6db40b2a002bf62792c3b
+      Path: Events\Default Work Unit\Level\danger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: dash
+      guid: 6d154b50acf3db4c90e0d7157e295364
+      id: 1942692385
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Player
+        ObjectType: 4
+        guid: 76de208ab3f3884c957a1c6a9dd75d30
+      - ElementName: dash
+        ObjectType: 3
+        guid: 6d154b50acf3db4c90e0d7157e295364
+      Path: Events\Default Work Unit\Player\dash
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: death
+      guid: 8cbb1c134fff0a439ad9510672be49fd
+      id: 779278001
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Player
+        ObjectType: 4
+        guid: 76de208ab3f3884c957a1c6a9dd75d30
+      - ElementName: death
+        ObjectType: 3
+        guid: 8cbb1c134fff0a439ad9510672be49fd
+      Path: Events\Default Work Unit\Player\death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: InitMusic
       guid: f69f84af2bfcda438a70922b1291fcd3
       id: 2984404912
@@ -123,10 +183,33 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
       - ElementName: InitMusic
         ObjectType: 3
         guid: f69f84af2bfcda438a70922b1291fcd3
-      Path: Events\Default Work Unit\InitMusic
+      Path: Events\Default Work Unit\Music\InitMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: jump
+      guid: 1217df932519654b885df04a0bd5a068
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Player
+        ObjectType: 4
+        guid: 76de208ab3f3884c957a1c6a9dd75d30
+      - ElementName: jump
+        ObjectType: 3
+        guid: 1217df932519654b885df04a0bd5a068
+      Path: Events\Default Work Unit\Player\jump
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -147,9 +230,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_chainsaw
-      guid: 4368e869b154214bb525861842528315
-      id: 4142890516
+    - name: Music
+      guid: 17b99fdab4553e49b96abd1b2f24946d
+      id: 3991942870
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -157,13 +240,50 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Level
+      - ElementName: Music
         ObjectType: 4
-        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
-      - ElementName: Play_chainsaw
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: outof_dash
+      guid: f88db6495bc0a04fbcfb388569717095
+      id: 2054631987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Player
+        ObjectType: 4
+        guid: 76de208ab3f3884c957a1c6a9dd75d30
+      - ElementName: outof_dash
         ObjectType: 3
-        guid: 4368e869b154214bb525861842528315
-      Path: Events\Default Work Unit\Level\Play_chainsaw
+        guid: f88db6495bc0a04fbcfb388569717095
+      Path: Events\Default Work Unit\Player\outof_dash
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: outof_jump
+      guid: a862329a4849194f9295860097581641
+      id: 303116883
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Player
+        ObjectType: 4
+        guid: 76de208ab3f3884c957a1c6a9dd75d30
+      - ElementName: outof_jump
+        ObjectType: 3
+        guid: a862329a4849194f9295860097581641
+      Path: Events\Default Work Unit\Player\outof_jump
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -187,220 +307,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_dash
-      guid: 6d154b50acf3db4c90e0d7157e295364
-      id: 2211787386
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Player
-        ObjectType: 4
-        guid: 76de208ab3f3884c957a1c6a9dd75d30
-      - ElementName: Play_dash
-        ObjectType: 3
-        guid: 6d154b50acf3db4c90e0d7157e295364
-      Path: Events\Default Work Unit\Player\Play_dash
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_death
-      guid: 8cbb1c134fff0a439ad9510672be49fd
-      id: 1172822028
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Player
-        ObjectType: 4
-        guid: 76de208ab3f3884c957a1c6a9dd75d30
-      - ElementName: Play_death
-        ObjectType: 3
-        guid: 8cbb1c134fff0a439ad9510672be49fd
-      Path: Events\Default Work Unit\Player\Play_death
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_jump
-      guid: 1217df932519654b885df04a0bd5a068
-      id: 3689126666
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Player
-        ObjectType: 4
-        guid: 76de208ab3f3884c957a1c6a9dd75d30
-      - ElementName: Play_jump
-        ObjectType: 3
-        guid: 1217df932519654b885df04a0bd5a068
-      Path: Events\Default Work Unit\Player\Play_jump
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_lava
-      guid: 13e654c4e406264cb522efae7da1fc79
-      id: 4151061776
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Level
-        ObjectType: 4
-        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
-      - ElementName: Play_lava
-        ObjectType: 3
-        guid: 13e654c4e406264cb522efae7da1fc79
-      Path: Events\Default Work Unit\Level\Play_lava
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_outof_dash
-      guid: f88db6495bc0a04fbcfb388569717095
-      id: 754809536
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Play_outof_dash
-        ObjectType: 3
-        guid: f88db6495bc0a04fbcfb388569717095
-      Path: Events\Default Work Unit\Play_outof_dash
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_outof_jump
-      guid: a862329a4849194f9295860097581641
-      id: 1535519480
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Play_outof_jump
-        ObjectType: 3
-        guid: a862329a4849194f9295860097581641
-      Path: Events\Default Work Unit\Play_outof_jump
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_pike
-      guid: 1af818aeb5068e45872f4a8b3dd5188c
-      id: 1484400955
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Level
-        ObjectType: 4
-        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
-      - ElementName: Play_pike
-        ObjectType: 3
-        guid: 1af818aeb5068e45872f4a8b3dd5188c
-      Path: Events\Default Work Unit\Level\Play_pike
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_slide_side
-      guid: 19051a31ece4bb4685f52e75a668ee70
-      id: 3689458381
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Level
-        ObjectType: 4
-        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
-      - ElementName: Play_slide_side
-        ObjectType: 3
-        guid: 19051a31ece4bb4685f52e75a668ee70
-      Path: Events\Default Work Unit\Level\Play_slide_side
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_slide_up
-      guid: 2cec7af4e0bf2e4f82012ba9ec3e5fa7
-      id: 3379235995
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: Level
-        ObjectType: 4
-        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
-      - ElementName: Play_slide_up
-        ObjectType: 3
-        guid: 2cec7af4e0bf2e4f82012ba9ec3e5fa7
-      Path: Events\Default Work Unit\Level\Play_slide_up
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_ui_back
-      guid: c1efafa0dde2e140a395f211877f00bf
-      id: 1386224142
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: UI
-        ObjectType: 4
-        guid: ef8f944b14431b4489b4e8fb86ceb716
-      - ElementName: Play_ui_back
-        ObjectType: 3
-        guid: c1efafa0dde2e140a395f211877f00bf
-      Path: Events\Default Work Unit\UI\Play_ui_back
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_ui_ok
-      guid: 16b0d906ca305841ba97c119a374ba81
-      id: 340097469
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 40b38485b475f54bb3310f7b981f5c29
-      - ElementName: UI
-        ObjectType: 4
-        guid: ef8f944b14431b4489b4e8fb86ceb716
-      - ElementName: Play_ui_ok
-        ObjectType: 3
-        guid: 16b0d906ca305841ba97c119a374ba81
-      Path: Events\Default Work Unit\UI\Play_ui_ok
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Player
       guid: 76de208ab3f3884c957a1c6a9dd75d30
       id: 1069431850
@@ -418,6 +324,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: slide_side
+      guid: 19051a31ece4bb4685f52e75a668ee70
+      id: 1953162098
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Level
+        ObjectType: 4
+        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
+      - ElementName: slide_side
+        ObjectType: 3
+        guid: 19051a31ece4bb4685f52e75a668ee70
+      Path: Events\Default Work Unit\Level\slide_side
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: slide_up
+      guid: 2cec7af4e0bf2e4f82012ba9ec3e5fa7
+      id: 3385125720
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Level
+        ObjectType: 4
+        guid: cd9b7daaa8e36b4a8304a309b95e5cc3
+      - ElementName: slide_up
+        ObjectType: 3
+        guid: 2cec7af4e0bf2e4f82012ba9ec3e5fa7
+      Path: Events\Default Work Unit\Level\slide_up
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UI
       guid: ef8f944b14431b4489b4e8fb86ceb716
       id: 1551306167
@@ -432,6 +378,313 @@ MonoBehaviour:
         ObjectType: 4
         guid: ef8f944b14431b4489b4e8fb86ceb716
       Path: Events\Default Work Unit\UI
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ui_back
+      guid: c1efafa0dde2e140a395f211877f00bf
+      id: 2024222415
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: UI
+        ObjectType: 4
+        guid: ef8f944b14431b4489b4e8fb86ceb716
+      - ElementName: ui_back
+        ObjectType: 3
+        guid: c1efafa0dde2e140a395f211877f00bf
+      Path: Events\Default Work Unit\UI\ui_back
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ui_ok
+      guid: 16b0d906ca305841ba97c119a374ba81
+      id: 1801758120
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: UI
+        ObjectType: 4
+        guid: ef8f944b14431b4489b4e8fb86ceb716
+      - ElementName: ui_ok
+        ObjectType: 3
+        guid: 16b0d906ca305841ba97c119a374ba81
+      Path: Events\Default Work Unit\UI\ui_ok
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w1l1
+      guid: 749a828f85935141b673f73a14b88ca7
+      id: 1558890612
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World01Events
+        ObjectType: 4
+        guid: 39ee370b363ee04ba47d4b1b9b486321
+      - ElementName: w1l1
+        ObjectType: 3
+        guid: 749a828f85935141b673f73a14b88ca7
+      Path: Events\Default Work Unit\Music\World01Events\w1l1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w1l2
+      guid: ff7708d3f7da4244afaa22de9746923d
+      id: 1558890615
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World01Events
+        ObjectType: 4
+        guid: 39ee370b363ee04ba47d4b1b9b486321
+      - ElementName: w1l2
+        ObjectType: 3
+        guid: ff7708d3f7da4244afaa22de9746923d
+      Path: Events\Default Work Unit\Music\World01Events\w1l2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w1l3
+      guid: 30b7b75ef2d9364580697fdbbc8b479c
+      id: 1558890614
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World01Events
+        ObjectType: 4
+        guid: 39ee370b363ee04ba47d4b1b9b486321
+      - ElementName: w1l3
+        ObjectType: 3
+        guid: 30b7b75ef2d9364580697fdbbc8b479c
+      Path: Events\Default Work Unit\Music\World01Events\w1l3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w2l1
+      guid: 440e733244656e428f5386e0820862e3
+      id: 2062366247
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World02Events
+        ObjectType: 4
+        guid: efd25502aca48d47936407ccb0fe81d4
+      - ElementName: w2l1
+        ObjectType: 3
+        guid: 440e733244656e428f5386e0820862e3
+      Path: Events\Default Work Unit\Music\World02Events\w2l1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w2l2
+      guid: 3589c1adbc9366458ba00fd90587797e
+      id: 2062366244
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World02Events
+        ObjectType: 4
+        guid: efd25502aca48d47936407ccb0fe81d4
+      - ElementName: w2l2
+        ObjectType: 3
+        guid: 3589c1adbc9366458ba00fd90587797e
+      Path: Events\Default Work Unit\Music\World02Events\w2l2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w2l3
+      guid: e9cd407446f8744d809271e77f96fe64
+      id: 2062366245
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World02Events
+        ObjectType: 4
+        guid: efd25502aca48d47936407ccb0fe81d4
+      - ElementName: w2l3
+        ObjectType: 3
+        guid: e9cd407446f8744d809271e77f96fe64
+      Path: Events\Default Work Unit\Music\World02Events\w2l3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w3l1
+      guid: cba6e4a443f26a4b8f65241c11b75196
+      id: 2028958134
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World03Events
+        ObjectType: 4
+        guid: eef770bf8e5cf946a49281fc890b03e5
+      - ElementName: w3l1
+        ObjectType: 3
+        guid: cba6e4a443f26a4b8f65241c11b75196
+      Path: Events\Default Work Unit\Music\World03Events\w3l1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w3l2
+      guid: 1f2fa196f760c94ab0be214bfbf1494b
+      id: 2028958133
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World03Events
+        ObjectType: 4
+        guid: eef770bf8e5cf946a49281fc890b03e5
+      - ElementName: w3l2
+        ObjectType: 3
+        guid: 1f2fa196f760c94ab0be214bfbf1494b
+      Path: Events\Default Work Unit\Music\World03Events\w3l2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: w3l3
+      guid: 267d5a2df4da7641bb8a495b5201e567
+      id: 2028958132
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World03Events
+        ObjectType: 4
+        guid: eef770bf8e5cf946a49281fc890b03e5
+      - ElementName: w3l3
+        ObjectType: 3
+        guid: 267d5a2df4da7641bb8a495b5201e567
+      Path: Events\Default Work Unit\Music\World03Events\w3l3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: World01Events
+      guid: 39ee370b363ee04ba47d4b1b9b486321
+      id: 3148289533
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World01Events
+        ObjectType: 4
+        guid: 39ee370b363ee04ba47d4b1b9b486321
+      Path: Events\Default Work Unit\Music\World01Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: World02Events
+      guid: efd25502aca48d47936407ccb0fe81d4
+      id: 551535822
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World02Events
+        ObjectType: 4
+        guid: efd25502aca48d47936407ccb0fe81d4
+      Path: Events\Default Work Unit\Music\World02Events
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: World03Events
+      guid: eef770bf8e5cf946a49281fc890b03e5
+      id: 1531461463
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: World03Events
+        ObjectType: 4
+        guid: eef770bf8e5cf946a49281fc890b03e5
+      Path: Events\Default Work Unit\Music\World03Events
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -461,7 +714,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b79960a17d78ae41bb0b0b0cc09ffe10
     GuidInternal: 
-    m_lastTime: -8585822661905778086
+    m_lastTime: -8585822490395246440
     List:
     - name: Game
       guid: eb57c8ba6fb97d4cb943fd06d4b44895
@@ -589,7 +842,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9b60357fee98b74a93149e6a59570d67
     GuidInternal: 
-    m_lastTime: -8585822661905738150
+    m_lastTime: -8585822490395246440
     List:
     - name: Collectibles
       guid: b861393050d45047a24f71abdb1b1488
@@ -654,6 +907,72 @@ MonoBehaviour:
         - ElementName: Jump
           ObjectType: 10
           guid: 6d22b1849c0e9e46879483ecf451a683
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Danger
+      guid: 277dd3e87f790949862990dc5c04af09
+      id: 4174463524
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9b60357fee98b74a93149e6a59570d67
+      - ElementName: Danger
+        ObjectType: 11
+        guid: 277dd3e87f790949862990dc5c04af09
+      Path: Switches\Default Work Unit\Danger
+      values:
+      - name: chainsaw
+        guid: 668e9e285615344d8b1c00d18ce8979f
+        id: 3963162363
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9b60357fee98b74a93149e6a59570d67
+        - ElementName: Danger
+          ObjectType: 11
+          guid: 277dd3e87f790949862990dc5c04af09
+        - ElementName: chainsaw
+          ObjectType: 10
+          guid: 668e9e285615344d8b1c00d18ce8979f
+      - name: lava
+        guid: fed45da0b33aaa4ab28d78d3fac0f040
+        id: 540301611
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9b60357fee98b74a93149e6a59570d67
+        - ElementName: Danger
+          ObjectType: 11
+          guid: 277dd3e87f790949862990dc5c04af09
+        - ElementName: lava
+          ObjectType: 10
+          guid: fed45da0b33aaa4ab28d78d3fac0f040
+      - name: pike
+        guid: 53939e219e454c439e638b299d373265
+        id: 2028414480
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9b60357fee98b74a93149e6a59570d67
+        - ElementName: Danger
+          ObjectType: 11
+          guid: 277dd3e87f790949862990dc5c04af09
+        - ElementName: pike
+          ObjectType: 10
+          guid: 53939e219e454c439e638b299d373265
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
