@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3452376654">
+		<SoundBank Id="1355168291" Language="SFX" Hash="871666895">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1675065207" Language="SFX" Hash="3509307785">
+		<SoundBank Id="1675065207" Language="SFX" Hash="1824153177">
 			<ObjectPath>\SoundBanks\Default Work Unit\DefaultSoundbank</ObjectPath>
 			<ShortName>DefaultSoundbank</ShortName>
 			<Path>DefaultSoundbank.bnk</Path>
@@ -88,6 +88,22 @@
 						<File Id="164992504" Language="SFX">
 							<ShortName>TransisW02.wav</ShortName>
 							<Path>SFX\TransisW02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="165266417" Language="SFX">
+							<ShortName>Cymb03.wav</ShortName>
+							<Path>SFX\Cymb03_D79FB2B7.wem</Path>
+						</File>
+						<File Id="311723662" Language="SFX">
+							<ShortName>w3lv1.wav</ShortName>
+							<Path>SFX\w3lv1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="421063930" Language="SFX">
+							<ShortName>w3lv2.wav</ShortName>
+							<Path>SFX\w3lv2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="449955904" Language="SFX">
+							<ShortName>w3lv3.wav</ShortName>
+							<Path>SFX\w3lv3_D79FB2B7.wem</Path>
 						</File>
 						<File Id="484540401" Language="SFX">
 							<ShortName>Cymb02.wav</ShortName>
@@ -183,7 +199,34 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}">
+							<Children>
+								<SwitchContainer SwitchValue="{8F994C13-58D7-4CE6-A427-398245D74FDD}">
+									<Media>
+										<File Id="311723662"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}">
+									<Media>
+										<File Id="311723662"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{24BBAB5D-C747-49AD-B981-B3EC0AAD76BD}">
+									<Media>
+										<File Id="421063930"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}">
+									<Media>
+										<File Id="449955904"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="659920515" Name="KillAllMusic" ObjectPath="\Events\Default Work Unit\Music\KillAllMusic"/>
+					</ActionPostEvent>
 				</Event>
 				<Event Id="3833651337" Name="jump" ObjectPath="\Events\Default Work Unit\Player\jump" DurationType="OneShot" DurationMin="0.911458" DurationMax="0.911458">
 					<IncludedMemoryFiles>
@@ -193,6 +236,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="659920515" Name="KillAllMusic" ObjectPath="\Events\Default Work Unit\Music\KillAllMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2054631987" Name="outof_dash" ObjectPath="\Events\Default Work Unit\Player\outof_dash" DurationType="OneShot" DurationMin="0.718813" DurationMax="0.718813">
 					<IncludedMemoryFiles>
 						<File Id="181883466" Language="SFX">
