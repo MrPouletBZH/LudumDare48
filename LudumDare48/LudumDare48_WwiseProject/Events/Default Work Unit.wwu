@@ -154,6 +154,26 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{DD5A00C1-285D-47DF-B379-565D53EE4DEC}" ShortID="962430865">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title" ID="{41C6FB5C-F305-4407-825F-8F86602B11FE}" WorkUnitID="{A16099B7-787D-41AE-BB0B-0B0CC09FFE10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{30CFCA33-BE39-44D7-8942-C70E9DE76E13}" ShortID="18878299">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="lv01" ID="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}" WorkUnitID="{7F35609B-98EE-4AB7-9314-9E6A59570D67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{EC278E0E-F1D2-44FE-9CF7-4A31EED2A217}" ShortID="844366334">
 									<ReferenceList>
 										<Reference Name="Target">

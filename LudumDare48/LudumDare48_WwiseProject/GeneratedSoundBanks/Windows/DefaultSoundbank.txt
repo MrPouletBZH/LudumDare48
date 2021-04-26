@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	303116883	outof_jump			\Default Work Unit\Player\outof_jump	
+	659920515	KillAllMusic			\Default Work Unit\Music\KillAllMusic	
 	661747096	Play_collectible			\Default Work Unit\Collectibles\Play_collectible	
 	779278001	death			\Default Work Unit\Player\death	
 	1558890612	w1l1			\Default Work Unit\Music\World01Events\w1l1	
@@ -49,28 +50,35 @@ State	ID	Name	State Group			Notes
 	4158285989	GameOver	Game			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	623062	W2Part03	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p03\W2Part03\W2Part03		1789568
-	1561521	Part03	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Part03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World01\p03\Part03\Part03		4001740
-	11972025	slide_up	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\slide_up_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\slide_up		241640
-	30722530	chainsaw	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\chainsaw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Danger\chainsaw		272788
-	49353136	W2Part01	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p01\W2Part01\W2Part01		1789568
-	92355950	outof_jump	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\outof_jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\outof_jump		89996
-	164992504	TransisW02	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\TransisW02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\TransisW02\TransisW02		894812
-	181883466	outof_dash	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\outof_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\outof_dash		138076
-	185810730	jump	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\jump		175064
-	374498485	ui_ok	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\ui_ok_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_ok		262680
-	384112159	death	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\death		333088
-	453248676	collect_jump	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\collect_jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\collectible\collect_jump		234252
-	484540401	Cymb02	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Cymb02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cymbals\Cymbals\Cymb02\Cymb02		3880476
-	564714340	Part02	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Part02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World01\p02\Part02\Part02		4001740
-	581564183	dash	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\dash		221656
-	582247356	collect_bonus	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\collect_bonus_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\collectible\collect_bonus		276992
-	677214552	Part01	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Part01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World01\p01\Part01\Part01		4001740
-	695042989	lava	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\lava_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Danger\lava		286552
-	713101366	ui_back	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\ui_back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_back		217968
-	790719259	collect_dash	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\collect_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\collectible\collect_dash		213676
-	897947128	Cymb01	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Cymb01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cymbals\Cymbals\Cymb01\Cymb01		3880476
-	919473543	W2Part02	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p02\W2Part02\W2Part02		1789568
-	962591851	pike	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\pike_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Danger\pike		237084
-	1009537930	slide_side	C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\slide_side_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\slide_side		182436
+	623062	W2Part03	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p03\W2Part03\W2Part03		1789568
+	1561521	Part03	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Part03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World01\p03\Part03\Part03		4001740
+	11972025	slide_up	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\slide_up_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\slide_up		241640
+	30722530	chainsaw	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\chainsaw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Danger\chainsaw		272788
+	49353136	W2Part01	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p01\W2Part01\W2Part01		1789568
+	92355950	outof_jump	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\outof_jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\outof_jump		89996
+	164992504	TransisW02	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\TransisW02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\TransisW02\TransisW02		894812
+	165266417	Cymb03	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Cymb03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cymbals\Cymbals\Cymb03\Cymb03		3880476
+	181883466	outof_dash	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\outof_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\outof_dash		138076
+	185810730	jump	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\jump		175064
+	311723662	w3lv1	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\w3lv1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World03\w3p01\w3lv1\w3lv1		5760056
+	374498485	ui_ok	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\ui_ok_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_ok		262680
+	384112159	death	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\death		333088
+	399554981	Core	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Core_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\Title\Core\Core		7176448
+	421063930	w3lv2	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\w3lv2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World03\w3p02\w3lv2\w3lv2		5760060
+	449955904	w3lv3	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\w3lv3_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World03\w3p03\w3lv3\w3lv3		5760056
+	453248676	collect_jump	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\collect_jump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\collectible\collect_jump		234252
+	484540401	Cymb02	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Cymb02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cymbals\Cymbals\Cymb02\Cymb02		3880476
+	502672451	Intro	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Intro_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Title\Title\Intro\Intro		7771412
+	564714340	Part02	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Part02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World01\p02\Part02\Part02		4001740
+	581564183	dash	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\dash		221656
+	582247356	collect_bonus	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\collect_bonus_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\collectible\collect_bonus		276992
+	677214552	Part01	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Part01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World01\p01\Part01\Part01		4001740
+	695042989	lava	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\lava_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Danger\lava		286552
+	713101366	ui_back	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\ui_back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_back		217968
+	784971413	EnterLevel	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\EnterLevel_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cymbals\EnterLv\EnterLevel\EnterLevel		4154808
+	790719259	collect_dash	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\collect_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Collectibles\collectible\collect_dash		213676
+	897947128	Cymb01	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\Cymb01_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Cymbals\Cymbals\Cymb01\Cymb01		3880476
+	919473543	W2Part02	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part02_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p02\W2Part02\W2Part02		1789568
+	962591851	pike	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\pike_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\Danger\pike		237084
+	1009537930	slide_side	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\slide_side_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level\slide_side		182436
 
