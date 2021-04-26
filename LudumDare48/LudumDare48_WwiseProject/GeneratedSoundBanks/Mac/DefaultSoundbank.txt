@@ -19,6 +19,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2062366247	w2l1			\Default Work Unit\Music\World02Events\w2l1	
 	2984404912	InitMusic			\Default Work Unit\Music\InitMusic	
 	3385125720	slide_up			\Default Work Unit\Level\slide_up	
+	3604647259	MainMenu			\Default Work Unit\Music\MainMenu	
 	3833651337	jump			\Default Work Unit\Player\jump	
 	4174463524	danger			\Default Work Unit\Level\danger	
 

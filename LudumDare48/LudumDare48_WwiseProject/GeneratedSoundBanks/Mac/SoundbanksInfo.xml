@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1675065207" Language="SFX" Hash="2049336223">
+		<SoundBank Id="1675065207" Language="SFX" Hash="4108175576">
 			<ObjectPath>\SoundBanks\Default Work Unit\DefaultSoundbank</ObjectPath>
 			<ShortName>DefaultSoundbank</ShortName>
 			<Path>DefaultSoundbank.bnk</Path>
@@ -253,6 +253,12 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="659920515" Name="KillAllMusic" ObjectPath="\Events\Default Work Unit\Music\KillAllMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3604647259" Name="MainMenu" ObjectPath="\Events\Default Work Unit\Music\MainMenu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="964811740" Name="Lv1" ObjectPath="\States\Default Work Unit\Level\Lv1"/>
+						<ActionSetStateEntry Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Game\Title"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2054631987" Name="outof_dash" ObjectPath="\Events\Default Work Unit\Player\outof_dash" DurationType="OneShot" DurationMin="0.718813" DurationMax="0.718813">
 					<IncludedMemoryFiles>
 						<File Id="181883466" Language="SFX">
