@@ -8,14 +8,18 @@ public class PlayerAnimationController : MonoBehaviour
     private bool crouching = false;
     private bool jumping = false; 
     private bool dashing = false; 
+    private PlayerMovements playerMovements;
     void Start(){
+        playerMovements = transform.GetComponent<PlayerMovements>();
         animator = transform.GetComponent<Animator>();
     }
 
     void Update(){
-        animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+        if (!playerMovements.getEnteringScene())
+            animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
         animator.SetFloat("Yvelocity", transform.GetComponent<Rigidbody2D>().velocity.y);
         animator.SetFloat("VerticalSpeed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
+        animator.SetBool("Dead", playerMovements.getDead());
 
         if (Dashing() && !dashing) {
             dashing = true;
@@ -64,11 +68,11 @@ public class PlayerAnimationController : MonoBehaviour
     }
 
     private bool Jumping() {
-        return transform.GetComponent<PlayerMovements>().GetIsJumping();
+        return playerMovements.GetIsJumping();
     }
 
     private bool Dashing(){
-        return transform.GetComponent<PlayerMovements>().GetIsDashing();
+        return playerMovements.GetIsDashing();
     }
 
     private IEnumerator TransiJumpIn(){
@@ -77,9 +81,9 @@ public class PlayerAnimationController : MonoBehaviour
     }
     private IEnumerator TransiJumpOut(){
         PlayerMovements.landing = true;
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.05f);
         PlayerMovements.landing = false;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.05f);
         animator.SetBool("JumpTransiOut", false);
     }
     

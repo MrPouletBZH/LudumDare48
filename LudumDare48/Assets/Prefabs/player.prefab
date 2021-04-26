@@ -86,7 +86,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -136,8 +136,33 @@ MonoBehaviour:
   dashSpeed: 12
   numberOfDash: 2
   numberOfJump: 2
-  onMenu: 1
+  enteringScene: 1
   crouchingModifier: 0.5
+  deathEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: df2ab80a9619fa64da3017b67b2c1ced,
+      type: 2}
+  jumpEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9fca6f539a7040d4c9395c43158ddf68,
+      type: 2}
+  dashEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f0edc8b169f715d4e8549b5fcf826ea4,
+      type: 2}
+  cantDashEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4f19b133b2ede1c44985341cc1e2b57e,
+      type: 2}
+  cantJumpEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0ce053ab2013e0048bbffae4aebe6670,
+      type: 2}
 --- !u!114 &1320567890074033684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,7 +259,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.32, y: 0.32}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

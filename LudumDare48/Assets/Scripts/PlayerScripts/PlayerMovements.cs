@@ -23,16 +23,21 @@ public class PlayerMovements : MonoBehaviour
     public int numberOfJump;  
 
     private bool isJumping;
-    private bool hangingOnWall;
     private bool isGrounded;
     private bool doubleJumpAllowed;
     private bool isDashing = false;
     private bool dashAllowed = true;
     private bool directionBlocked = false;
-    public bool onMenu = true;
-    public static bool onDialogue = false;
+    public bool enteringScene = true;
     public static bool landing = false;
     public float crouchingModifier;
+    private bool dead = false; 
+
+    public AK.Wwise.Event deathEvent;
+    public AK.Wwise.Event jumpEvent;
+    public AK.Wwise.Event dashEvent;
+    public AK.Wwise.Event cantDashEvent;
+    public AK.Wwise.Event cantJumpEvent;
 
     private GameObject[] dashMovingPlatform;
     private GameObject[] jumpMovingPlatform;
@@ -49,58 +54,72 @@ public class PlayerMovements : MonoBehaviour
         originalGravityScale = rb.gravityScale;
     }
     void Update(){
+        if(!dead){
+            if (Input.GetKeyDown(KeyCode.Escape)){
+                inGameMenu.SetActive(true);
+                Time.timeScale = 0;
+            }
 
-        if (Input.GetKeyDown(KeyCode.Escape)){
-            inGameMenu.SetActive(true);
-            Time.timeScale = 0;
-        }
+            if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0){
+                bxCllder.enabled = true;
+                currentCollider = bxCllder;
+                plgClldr.enabled = false;
+            }
+            else{
+                plgClldr.enabled = true;
+                currentCollider = plgClldr;
+                bxCllder.enabled = false;
+            }
 
-        if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0){
-            bxCllder.enabled = true;
-            currentCollider = bxCllder;
-            plgClldr.enabled = false;
+            isGrounded = Grounded();
+
+            if(!directionBlocked)
+                movement = Input.GetAxisRaw("Horizontal");
+            //Dash
+            if (!enteringScene && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Backslash)) && dashAllowed && numberOfDash >0 && Time.timeScale!=0) {
+                dashEvent.Post(gameObject);
+                numberOfDash --;
+                isDashing = true;
+                dashAllowed = false;
+                jumpCounter = 0;
+                StartCoroutine(Dash());
+            }
+            else if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Backslash)) && numberOfDash==0)
+                cantDashEvent.Post(gameObject);
+
+            //Jumping
+            if (!enteringScene && Input.GetKeyDown(KeyCode.Space) && !isDashing && (isGrounded||doubleJumpAllowed) && numberOfJump>0) {
+                foreach(GameObject go in jumpMovingPlatform)
+                    go.GetComponent<DashMovingPlatform>().SwitchingPosition();
+                jumpEvent.Post(gameObject);
+                numberOfJump --;
+                rb.velocity = Vector2.up * jumpSpeed;   
+                isJumping =true;
+                jumpCounter = jumpTime;
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && numberOfJump ==0)
+                cantJumpEvent.Post(gameObject);
+            
+            //Adaptative jump power
+            if (Input.GetKey(KeyCode.Space) && isJumping)
+                if (jumpCounter >0 ) {
+                    rb.velocity = Vector2.up * jumpSpeed;
+                    jumpCounter-=Time.deltaTime;
+                }
+                else 
+                    isJumping = false;
+
+            if (Input.GetKeyUp(KeyCode.Space))
+                isJumping = false;    
         }
         else{
-            plgClldr.enabled = true;
-            currentCollider = plgClldr;
-            bxCllder.enabled = false;
-        }
-
-        isGrounded = Grounded();
-
-        if(!directionBlocked)
-            movement = Input.GetAxisRaw("Horizontal");
-        //Dash
-        if (!onMenu && !onDialogue && Input.GetKeyDown(KeyCode.LeftShift)&& dashAllowed && numberOfDash >0 && Time.timeScale!=0) {
-            numberOfDash --;
-            isDashing = true;
-            dashAllowed = false;
-            jumpCounter = 0;
-            StartCoroutine(Dash());
-        }
-        //Jumping
-        if (!onMenu && !onDialogue && Input.GetKeyDown(KeyCode.Space) && !isDashing && (isGrounded || hangingOnWall ||doubleJumpAllowed) && numberOfJump>0) {
-            foreach(GameObject go in jumpMovingPlatform)
-                go.GetComponent<DashMovingPlatform>().SwitchingPosition();
-            numberOfJump --;
-            rb.velocity = Vector2.up * jumpSpeed;   
-            isJumping =true;
-            jumpCounter = jumpTime;
-        }
-        
-        //Adaptative jump power
-        if (Input.GetKey(KeyCode.Space) && isJumping)
-            if (jumpCounter >0 ) {
-                rb.velocity = Vector2.up * jumpSpeed;
-                jumpCounter-=Time.deltaTime;
-            }
-            else 
-                isJumping = false;
-        if (Input.GetKeyUp(KeyCode.Space))
-            isJumping = false;    
+            rb.velocity = Vector2.zero;
+            rb.gravityScale = 0;
+            movement = 0;
+        } 
     }
     void FixedUpdate() {
-        if(!onMenu && !onDialogue && !landing) {
+        if(!enteringScene && !landing) {
             if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0)
                 transform.position += new Vector3(movement*speed,0,0)*Time.deltaTime*crouchingModifier;
             else
@@ -155,21 +174,31 @@ public class PlayerMovements : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "KillingObject") {
-            inGameMenu.GetComponent<InGameMenu>().RestartLevel();
+            dead = true;
+            StartCoroutine(Death());
         }
             
+    }
+
+    private IEnumerator Death(){
+    deathEvent.Post(gameObject);
+    yield return new WaitForSeconds(0.35f);
+    inGameMenu.GetComponent<InGameMenu>().RestartLevel();
     }
 
     public bool GetIsDashing(){
         return isDashing;
     }
 
+    public bool getDead(){
+        return dead;
+    }
+
     public bool GetIsJumping(){
         return !Grounded();
     }
 
-    public bool GetClimbing(){
-        return hangingOnWall;
-    }
-    
+    public bool getEnteringScene(){
+        return enteringScene;
+    }    
 }

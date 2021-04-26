@@ -56,6 +56,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -1709,7 +1718,7 @@ ScriptsOnlyBuild:
     className: AkMacSettings
   - hash:
       serializedVersion: 2
-      Hash: 332a404c05ff89bbb804f91c70b78a58
+      Hash: 7b1c0223bdb1b6104685fac124269e9a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovements
@@ -2321,4 +2330,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/SceneThirdLevel/Level3SceneEND.unity
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Documents/Builds Unity/LudumDare48/0.3windows/LudumDare48.exe
+  playerPath: D:/Documents/Builds Unity/LudumDare48/0.4windows/LudumDare48.exe
