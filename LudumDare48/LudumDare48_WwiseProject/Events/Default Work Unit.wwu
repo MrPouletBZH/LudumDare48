@@ -207,6 +207,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{89042D61-72AA-4575-8E5A-B4D185716E33}" ShortID="789233545">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lv1" ID="{673BD050-6007-4D38-8717-C863581727BB}" WorkUnitID="{A16099B7-787D-41AE-BB0B-0B0CC09FFE10}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="w1l2" ID="{D30877FF-DAF7-4442-AFAA-22DE9746923D}">
