@@ -457,6 +457,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="End" ID="{2A49B03E-0324-480C-9460-B6CE402AE129}">
+							<ChildrenList>
+								<Action Name="" ID="{544BED2B-6890-4242-8628-3ECCDB8E8A9F}" ShortID="391493580">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GameOver" ID="{89001BE9-C6C4-4C20-94A5-02A658E8E053}" WorkUnitID="{A16099B7-787D-41AE-BB0B-0B0CC09FFE10}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

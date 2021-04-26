@@ -54,6 +54,10 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MainMenu" ID="{E0F4FB9D-6772-4F70-AA9D-A316220AD5B6}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="dash" ID="{504B156D-F3AC-4CDB-90E0-D7157E295364}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 							<Position X="2" Y="1"/>
 						</Module>
@@ -82,6 +86,10 @@
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="End" ID="{2A49B03E-0324-480C-9460-B6CE402AE129}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="slide_side" ID="{311A0519-E4EC-46BB-85F5-2E75A668EE70}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 							<Position X="4" Y="0"/>
 						</Module>
@@ -92,8 +100,8 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Lv1" ID="{673BD050-6007-4D38-8717-C863581727BB}"/>
-						<CurrentStateRef Name="Title" ID="{41C6FB5C-F305-4407-825F-8F86602B11FE}"/>
+						<CurrentStateRef Name="Lv3" ID="{AC8F3834-2801-4D84-A704-C86AD2142831}"/>
+						<CurrentStateRef Name="World03" ID="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
