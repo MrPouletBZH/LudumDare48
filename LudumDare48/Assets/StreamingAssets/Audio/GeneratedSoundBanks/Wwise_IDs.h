@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID INITMUSIC = 2984404912U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID KILLALLMUSIC = 659920515U;
+        static const AkUniqueID MAINMENU = 3604647259U;
         static const AkUniqueID OUTOF_DASH = 2054631987U;
         static const AkUniqueID OUTOF_JUMP = 303116883U;
         static const AkUniqueID PLAY_COLLECTIBLE = 661747096U;

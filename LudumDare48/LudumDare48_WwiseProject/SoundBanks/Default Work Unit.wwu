@@ -26,6 +26,7 @@
 						<ObjectRef Name="KillAllMusic" ID="{D9EC27D6-14F5-4E86-BAAE-E3917EE40B72}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="outof_jump" ID="{9A3262A8-4948-4F19-9295-860097581641}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="slide_up" ID="{F47AEC2C-BFE0-4F2E-8201-2BA9EC3E5FA7}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainMenu" ID="{E0F4FB9D-6772-4F70-AA9D-A316220AD5B6}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="outof_dash" ID="{49B68DF8-C05B-4FA0-BCFB-388569717095}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

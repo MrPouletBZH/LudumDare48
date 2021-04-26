@@ -92,8 +92,8 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Lv2" ID="{EDFB2328-5E87-4521-A6F9-8E001A783004}"/>
-						<CurrentStateRef Name="World03" ID="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}"/>
+						<CurrentStateRef Name="Lv1" ID="{673BD050-6007-4D38-8717-C863581727BB}"/>
+						<CurrentStateRef Name="Title" ID="{41C6FB5C-F305-4407-825F-8F86602B11FE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
