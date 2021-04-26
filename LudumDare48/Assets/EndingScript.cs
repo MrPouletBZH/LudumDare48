@@ -14,9 +14,9 @@ public class EndingScript : MonoBehaviour
 
     private IEnumerator Ending(){
         CanvasGroup canvas = transform.GetChild(1).GetComponent<CanvasGroup>();
-        for (int x = 0; x<1000; x++){
-            canvas.alpha-=0.001f;
-            yield return new WaitForSeconds(0.002f);
+        for (int x = 0; x<100; x++){
+            canvas.alpha-=0.01f;
+            yield return new WaitForSeconds(0.02f);
         }
     }
 }
