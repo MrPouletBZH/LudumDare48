@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c8213f3d76c19f4ab4e87685d06916c9
     GuidInternal: 
-    m_lastTime: -8585823537184441479
+    m_lastTime: -8585822273756615689
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 5d073883ffba104daa10487809e6f429
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c8213f3d76c19f4ab4e87685d06916c9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: 5d073883ffba104daa10487809e6f429
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
+    - name: SFX
+      guid: 63bd0d68ade05149833c89534e56ddcc
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c8213f3d76c19f4ab4e87685d06916c9
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: SFX
+        ObjectType: 2
+        guid: 63bd0d68ade05149833c89534e56ddcc
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -94,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 40b38485b475f54bb3310f7b981f5c29
     GuidInternal: 
-    m_lastTime: -8585822490401007732
+    m_lastTime: -8585822273760737519
     List:
     - name: Collectibles
       guid: 09d8efc5a3b8404988b3951f31dc69e2
@@ -210,6 +244,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1217df932519654b885df04a0bd5a068
       Path: Events\Default Work Unit\Player\jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: KillAllMusic
+      guid: d627ecd9f514864ebaaee3917ee40b72
+      id: 659920515
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: KillAllMusic
+        ObjectType: 3
+        guid: d627ecd9f514864ebaaee3917ee40b72
+      Path: Events\Default Work Unit\Music\KillAllMusic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1057,7 +1111,7 @@ MonoBehaviour:
     m_lastTime: -8585823537179961698
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000b0000000c0000000f000000100000001100000013000000140000001500000016000000220000002300000024000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000f000000100000001100000013000000140000001500000016000000220000002300000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
