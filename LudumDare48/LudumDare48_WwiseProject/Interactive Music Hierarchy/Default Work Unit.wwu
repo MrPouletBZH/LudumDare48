@@ -2952,6 +2952,38 @@
 										<AudioNodeRef Name="w3p01" ID="{669234E7-0800-42E0-8DC7-510BE713AD6B}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Lv1" ID="{673BD050-6007-4D38-8717-C863581727BB}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="w3p01" ID="{669234E7-0800-42E0-8DC7-510BE713AD6B}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{77808197-85F8-4460-87DB-D13753EC08B7}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="w3p01" ID="{669234E7-0800-42E0-8DC7-510BE713AD6B}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Lv2" ID="{EDFB2328-5E87-4521-A6F9-8E001A783004}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="w3p02" ID="{8D15AB99-20E9-4522-9CFB-D98BAF718268}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Lv3" ID="{AC8F3834-2801-4D84-A704-C86AD2142831}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="w3p03" ID="{00FDE9F1-9F40-49C1-8559-EBA9531F06AE}" WorkUnitID="{0EEE887B-16E6-40C1-9AE7-1C551B2ED69E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
 							</EntryList>
 						</MusicSwitchContainer>
 						<Folder Name="Title" ID="{A1FFB8A0-8E50-415E-9B6D-35A0ED90AD21}" ShortID="452950570">

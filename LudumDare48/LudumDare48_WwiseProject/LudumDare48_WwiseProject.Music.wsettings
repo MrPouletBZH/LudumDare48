@@ -87,8 +87,8 @@
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
 				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
-				<Property Name="Mixing Desk\CurrentStates\{38B821A8-047D-4527-B4CF-86952B4C8529}" Type="string" Value="{77808197-85F8-4460-87DB-D13753EC08B7}"/>
-				<Property Name="Mixing Desk\CurrentStates\{BAC857EB-B96F-4C7D-B943-FD06D4B44895}" Type="string" Value="{ECE56560-12B6-45FF-926D-9D1B2CF77A8B}"/>
+				<Property Name="Mixing Desk\CurrentStates\{38B821A8-047D-4527-B4CF-86952B4C8529}" Type="string" Value="{EDFB2328-5E87-4521-A6F9-8E001A783004}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BAC857EB-B96F-4C7D-B943-FD06D4B44895}" Type="string" Value="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>

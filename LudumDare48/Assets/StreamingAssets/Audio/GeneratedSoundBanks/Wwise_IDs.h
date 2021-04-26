@@ -54,6 +54,19 @@ namespace AK
             } // namespace STATE
         } // namespace GAME
 
+        namespace LEVEL
+        {
+            static const AkUniqueID GROUP = 2782712965U;
+
+            namespace STATE
+            {
+                static const AkUniqueID LV1 = 964811740U;
+                static const AkUniqueID LV2 = 964811743U;
+                static const AkUniqueID LV3 = 964811742U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace LEVEL
+
     } // namespace STATES
 
     namespace SWITCHES
