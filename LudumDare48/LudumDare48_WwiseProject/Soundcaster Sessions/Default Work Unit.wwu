@@ -97,7 +97,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Dash" ID="{5F3A3B2F-BC98-4C7A-95E7-22635C68EBA8}"/>
 						<CurrentSwitchRef Name="chainsaw" ID="{289E8E66-1556-4D34-8B1C-00D18CE8979F}"/>
-						<CurrentSwitchRef Name="lv01" ID="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}"/>
+						<CurrentSwitchRef Name="lv02" ID="{24BBAB5D-C747-49AD-B981-B3EC0AAD76BD}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

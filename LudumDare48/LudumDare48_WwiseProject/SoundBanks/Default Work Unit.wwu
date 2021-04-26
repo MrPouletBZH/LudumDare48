@@ -23,6 +23,7 @@
 						<ObjectRef Name="w3l1" ID="{A4E4A6CB-F243-4B6A-8F65-241C11B75196}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="dash" ID="{504B156D-F3AC-4CDB-90E0-D7157E295364}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="w2l3" ID="{7440CDE9-F846-4D74-8092-71E77F96FE64}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="KillAllMusic" ID="{D9EC27D6-14F5-4E86-BAAE-E3917EE40B72}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="outof_jump" ID="{9A3262A8-4948-4F19-9295-860097581641}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="slide_up" ID="{F47AEC2C-BFE0-4F2E-8201-2BA9EC3E5FA7}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="outof_dash" ID="{49B68DF8-C05B-4FA0-BCFB-388569717095}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>

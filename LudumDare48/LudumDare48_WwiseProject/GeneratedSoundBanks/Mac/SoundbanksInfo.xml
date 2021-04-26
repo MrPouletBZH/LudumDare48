@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\paulm\Documents\GitHub\LudumDare48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3452376654">
+		<SoundBank Id="1355168291" Language="SFX" Hash="871666895">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1675065207" Language="SFX" Hash="3680143378">
+		<SoundBank Id="1675065207" Language="SFX" Hash="3021519187">
 			<ObjectPath>\SoundBanks\Default Work Unit\DefaultSoundbank</ObjectPath>
 			<ShortName>DefaultSoundbank</ShortName>
 			<Path>DefaultSoundbank.bnk</Path>
@@ -89,9 +89,33 @@
 							<ShortName>TransisW02.wav</ShortName>
 							<Path>SFX\TransisW02_D79FB2B7.wem</Path>
 						</File>
+						<File Id="165266417" Language="SFX">
+							<ShortName>Cymb03.wav</ShortName>
+							<Path>SFX\Cymb03_D79FB2B7.wem</Path>
+						</File>
+						<File Id="311723662" Language="SFX">
+							<ShortName>w3lv1.wav</ShortName>
+							<Path>SFX\w3lv1_D79FB2B7.wem</Path>
+						</File>
+						<File Id="399554981" Language="SFX">
+							<ShortName>Core.wav</ShortName>
+							<Path>SFX\Core_D79FB2B7.wem</Path>
+						</File>
+						<File Id="421063930" Language="SFX">
+							<ShortName>w3lv2.wav</ShortName>
+							<Path>SFX\w3lv2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="449955904" Language="SFX">
+							<ShortName>w3lv3.wav</ShortName>
+							<Path>SFX\w3lv3_D79FB2B7.wem</Path>
+						</File>
 						<File Id="484540401" Language="SFX">
 							<ShortName>Cymb02.wav</ShortName>
 							<Path>SFX\Cymb02_D79FB2B7.wem</Path>
+						</File>
+						<File Id="502672451" Language="SFX">
+							<ShortName>Intro.wav</ShortName>
+							<Path>SFX\Intro_D79FB2B7.wem</Path>
 						</File>
 						<File Id="564714340" Language="SFX">
 							<ShortName>Part02.wav</ShortName>
@@ -100,6 +124,10 @@
 						<File Id="677214552" Language="SFX">
 							<ShortName>Part01.wav</ShortName>
 							<Path>SFX\Part01_D79FB2B7.wem</Path>
+						</File>
+						<File Id="784971413" Language="SFX">
+							<ShortName>EnterLevel.wav</ShortName>
+							<Path>SFX\EnterLevel_D79FB2B7.wem</Path>
 						</File>
 						<File Id="897947128" Language="SFX">
 							<ShortName>Cymb01.wav</ShortName>
@@ -136,28 +164,10 @@
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{BAC857EB-B96F-4C7D-B943-FD06D4B44895}">
-							<Children>
-								<SwitchContainer SwitchValue="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}">
-									<Media>
-										<File Id="677214552"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{24BBAB5D-C747-49AD-B981-B3EC0AAD76BD}">
-									<Media>
-										<File Id="564714340"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}">
-									<Media>
-										<File Id="1561521"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{8F994C13-58D7-4CE6-A427-398245D74FDD}">
-									<Media>
-										<File Id="677214552"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
+							<Media>
+								<File Id="399554981"/>
+								<File Id="502672451"/>
+							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{AB3BE110-D711-4B48-A9F1-1E62678AC2E5}">
 							<Children>
@@ -183,7 +193,46 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}">
+							<Children>
+								<SwitchContainer SwitchValue="{8F994C13-58D7-4CE6-A427-398245D74FDD}">
+									<Media>
+										<File Id="311723662"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{2F583FA2-0FE0-44B7-9245-D781EC7BDB88}">
+									<Media>
+										<File Id="311723662"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{24BBAB5D-C747-49AD-B981-B3EC0AAD76BD}">
+									<Media>
+										<File Id="421063930"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6177B06C-9707-4DA9-ACE0-4DF12A3E3648}">
+									<Media>
+										<File Id="449955904"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{41C6FB5C-F305-4407-825F-8F86602B11FE}">
+							<Media>
+								<File Id="399554981"/>
+								<File Id="502672451"/>
+							</Media>
+						</SwitchContainer>
 					</SwitchContainers>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="659920515" Name="KillAllMusic" ObjectPath="\Events\Default Work Unit\Music\KillAllMusic"/>
+					</ActionPostEvent>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Game\Title"/>
+					</ActionSetState>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="1684872406" Name="lv01" ObjectPath="\Switches\Default Work Unit\Level\lv01"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="3833651337" Name="jump" ObjectPath="\Events\Default Work Unit\Player\jump" DurationType="OneShot" DurationMin="0.911458" DurationMax="0.911458">
 					<IncludedMemoryFiles>
@@ -193,6 +242,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="659920515" Name="KillAllMusic" ObjectPath="\Events\Default Work Unit\Music\KillAllMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2054631987" Name="outof_dash" ObjectPath="\Events\Default Work Unit\Player\outof_dash" DurationType="OneShot" DurationMin="0.718813" DurationMax="0.718813">
 					<IncludedMemoryFiles>
 						<File Id="181883466" Language="SFX">
@@ -366,6 +416,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="2412061574" Name="World01" ObjectPath="\States\Default Work Unit\Game\World01">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Game\Title">
 					<States/>
 				</StateGroup>
 			</StateGroups>
