@@ -18,6 +18,7 @@ public class PlayerAnimationController : MonoBehaviour
         if (!playerMovements.getEnteringScene())
             animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
         animator.SetFloat("Yvelocity", transform.GetComponent<Rigidbody2D>().velocity.y);
+        animator.SetBool("Grounded", playerMovements.getIsGrounded());
         animator.SetFloat("VerticalSpeed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
         animator.SetBool("Dead", playerMovements.getDead());
 

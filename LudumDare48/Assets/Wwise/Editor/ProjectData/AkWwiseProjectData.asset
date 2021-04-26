@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 8ba1733e02697f438707b3ea4b4a029f
     GuidInternal: 
-    m_lastTime: -8585821725841200085
+    m_lastTime: -8585821368091250763
     List:
     - name: DefaultSoundbank
       guid: 71ca47eca8a69743a452006d633d5d88
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 40b38485b475f54bb3310f7b981f5c29
     GuidInternal: 
-    m_lastTime: -8585821725859795752
+    m_lastTime: -8585821368097683896
     List:
     - name: Collectibles
       guid: 09d8efc5a3b8404988b3951f31dc69e2
@@ -207,6 +207,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: End
+      guid: 3eb0492a24030c489460b6ce402ae129
+      id: 529726532
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: End
+        ObjectType: 3
+        guid: 3eb0492a24030c489460b6ce402ae129
+      Path: Events\Default Work Unit\Music\End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: InitMusic
       guid: f69f84af2bfcda438a70922b1291fcd3
       id: 2984404912
@@ -281,6 +301,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: cd9b7daaa8e36b4a8304a309b95e5cc3
       Path: Events\Default Work Unit\Level
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainMenu
+      guid: 9dfbf4e07267704faa9da316220ad5b6
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 40b38485b475f54bb3310f7b981f5c29
+      - ElementName: Music
+        ObjectType: 4
+        guid: 17b99fdab4553e49b96abd1b2f24946d
+      - ElementName: MainMenu
+        ObjectType: 3
+        guid: 9dfbf4e07267704faa9da316220ad5b6
+      Path: Events\Default Work Unit\Music\MainMenu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -768,7 +808,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b79960a17d78ae41bb0b0b0cc09ffe10
     GuidInternal: 
-    m_lastTime: -8585821725841200085
+    m_lastTime: -8585821559486916900
     List:
     - name: Game
       guid: eb57c8ba6fb97d4cb943fd06d4b44895
@@ -881,6 +921,88 @@ MonoBehaviour:
         - ElementName: World03
           ObjectType: 8
           guid: f3c0792c0439b8459a7afcd525d020b9
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Level
+      guid: a821b8387d042745b4cf86952b4c8529
+      id: 2782712965
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b79960a17d78ae41bb0b0b0cc09ffe10
+      - ElementName: Level
+        ObjectType: 9
+        guid: a821b8387d042745b4cf86952b4c8529
+      Path: States\Default Work Unit\Level
+      values:
+      - name: Lv1
+        guid: 50d03b670760384d8717c863581727bb
+        id: 964811740
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b79960a17d78ae41bb0b0b0cc09ffe10
+        - ElementName: Level
+          ObjectType: 9
+          guid: a821b8387d042745b4cf86952b4c8529
+        - ElementName: Lv1
+          ObjectType: 8
+          guid: 50d03b670760384d8717c863581727bb
+      - name: Lv2
+        guid: 2823fbed875e2145a6f98e001a783004
+        id: 964811743
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b79960a17d78ae41bb0b0b0cc09ffe10
+        - ElementName: Level
+          ObjectType: 9
+          guid: a821b8387d042745b4cf86952b4c8529
+        - ElementName: Lv2
+          ObjectType: 8
+          guid: 2823fbed875e2145a6f98e001a783004
+      - name: Lv3
+        guid: 34388fac0128844da704c86ad2142831
+        id: 964811742
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b79960a17d78ae41bb0b0b0cc09ffe10
+        - ElementName: Level
+          ObjectType: 9
+          guid: a821b8387d042745b4cf86952b4c8529
+        - ElementName: Lv3
+          ObjectType: 8
+          guid: 34388fac0128844da704c86ad2142831
+      - name: None
+        guid: 97818077f885604487dbd13753ec08b7
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b79960a17d78ae41bb0b0b0cc09ffe10
+        - ElementName: Level
+          ObjectType: 9
+          guid: a821b8387d042745b4cf86952b4c8529
+        - ElementName: None
+          ObjectType: 8
+          guid: 97818077f885604487dbd13753ec08b7
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1111,7 +1233,7 @@ MonoBehaviour:
     m_lastTime: -8585821725841190082
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000f000000100000001100000013000000140000001500000016000000220000002300000024000000
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000c0000000f000000100000001100000012000000130000001400000015000000160000001700000022000000230000002400000025000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

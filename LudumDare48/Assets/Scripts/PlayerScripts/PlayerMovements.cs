@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovements : MonoBehaviour
 {
     public Rigidbody2D rb;
-    private BoxCollider2D bxCllder;
+    private Collider2D bxCllder;
     private CapsuleCollider2D plgClldr;
     private Collider2D currentCollider;
     [SerializeField] private LayerMask platformLayer = new LayerMask();
@@ -32,12 +32,16 @@ public class PlayerMovements : MonoBehaviour
     public static bool landing = false;
     public float crouchingModifier;
     private bool dead = false; 
+    private bool itemTaken = false;
+    private string success = "";
 
     public AK.Wwise.Event deathEvent;
     public AK.Wwise.Event jumpEvent;
     public AK.Wwise.Event dashEvent;
     public AK.Wwise.Event cantDashEvent;
     public AK.Wwise.Event cantJumpEvent;
+    public AK.Wwise.Event SlideDashEvent;
+    public AK.Wwise.Event SlideJumpEvent;
 
     private GameObject[] dashMovingPlatform;
     private GameObject[] jumpMovingPlatform;
@@ -50,7 +54,8 @@ public class PlayerMovements : MonoBehaviour
         jumpMovingPlatform = GameObject.FindGameObjectsWithTag("JumpMovingPlatform");
         bxCllder = transform.GetComponent<BoxCollider2D>();
         plgClldr = transform.GetComponent<CapsuleCollider2D>();
-        currentCollider = plgClldr;
+        currentCollider = bxCllder;
+        plgClldr.enabled = false;
         originalGravityScale = rb.gravityScale;
     }
     void Update(){
@@ -58,17 +63,6 @@ public class PlayerMovements : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape)){
                 inGameMenu.SetActive(true);
                 Time.timeScale = 0;
-            }
-
-            if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0){
-                bxCllder.enabled = true;
-                currentCollider = bxCllder;
-                plgClldr.enabled = false;
-            }
-            else{
-                plgClldr.enabled = true;
-                currentCollider = plgClldr;
-                bxCllder.enabled = false;
             }
 
             isGrounded = Grounded();
@@ -88,9 +82,12 @@ public class PlayerMovements : MonoBehaviour
                 cantDashEvent.Post(gameObject);
 
             //Jumping
-            if (!enteringScene && Input.GetKeyDown(KeyCode.Space) && !isDashing && (isGrounded||doubleJumpAllowed) && numberOfJump>0) {
-                foreach(GameObject go in jumpMovingPlatform)
-                    go.GetComponent<DashMovingPlatform>().SwitchingPosition();
+            if (!enteringScene && Input.GetKeyDown(KeyCode.Space) && !isDashing && numberOfJump>0) {
+                for(int i =0; i<jumpMovingPlatform.Length; i++){
+                    if (i == 0)
+                        SlideJumpEvent.Post(gameObject);
+                    jumpMovingPlatform[i].GetComponent<DashMovingPlatform>().SwitchingPosition();
+                }
                 jumpEvent.Post(gameObject);
                 numberOfJump --;
                 rb.velocity = Vector2.up * jumpSpeed;   
@@ -128,17 +125,23 @@ public class PlayerMovements : MonoBehaviour
     }
 
     private bool Grounded() {
-        bool retour = Physics2D.BoxCast(currentCollider.bounds.center, currentCollider.bounds.size, 0f, Vector2.down, .01f, platformLayer).collider!=null; 
+        bool retour = Physics2D.BoxCast(currentCollider.bounds.center, currentCollider.bounds.size, 0f, Vector2.down, .013f, platformLayer).collider!=null; 
         if (retour&&rb.velocity.y==0)
             doubleJumpAllowed = true;
         return retour && doubleJumpAllowed;
     }
 
     private IEnumerator Dash() {
-        foreach(GameObject go in dashMovingPlatform)
-            go.GetComponent<DashMovingPlatform>().SwitchingPosition();
+        for(int i =0; i<dashMovingPlatform.Length; i++){
+            if (i == 0)
+                SlideDashEvent.Post(gameObject);
+            dashMovingPlatform[i].GetComponent<DashMovingPlatform>().SwitchingPosition();
+        }
         movement = 0;
         rb.gravityScale = 0;
+        plgClldr.enabled = true;
+        currentCollider = plgClldr;
+        bxCllder.enabled = false;
         int direction = transform.GetComponent<FlipSprite>().GetFacingRight()? 1: -1;
         Quaternion baseRotation = transform.rotation;
         Vector2 previousVelocity = new Vector2(rb.velocity.x, 0);
@@ -152,7 +155,10 @@ public class PlayerMovements : MonoBehaviour
         rb.velocity = previousVelocity;
         directionBlocked = false;
         isDashing = false;
-        
+        bxCllder.enabled = true;
+        currentCollider = bxCllder;
+        plgClldr.enabled = false;
+
         yield return new WaitForSeconds(.02f);
         dashAllowed = true;
     }
@@ -168,7 +174,8 @@ public class PlayerMovements : MonoBehaviour
         }
         else if (other.tag == "CompletionistCollectible"){
             Destroy(other.gameObject);
-            GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<Completionist>().ObjectTaken();
+            itemTaken = true;
+            success = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<Completionist>().ObjectTaken();
         }
     }
 
@@ -200,5 +207,15 @@ public class PlayerMovements : MonoBehaviour
 
     public bool getEnteringScene(){
         return enteringScene;
-    }    
+    } 
+    public bool getIsGrounded(){
+        return isGrounded;
+    }   
+    public string GetSuccess(){
+        return success;
+    }
+
+    public bool GetItemTaken(){
+        return itemTaken;
+    }
 }
