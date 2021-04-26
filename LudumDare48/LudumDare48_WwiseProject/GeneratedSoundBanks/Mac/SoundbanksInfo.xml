@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1675065207" Language="SFX" Hash="3522399578">
+		<SoundBank Id="1675065207" Language="SFX" Hash="2049336223">
 			<ObjectPath>\SoundBanks\Default Work Unit\DefaultSoundbank</ObjectPath>
 			<ShortName>DefaultSoundbank</ShortName>
 			<Path>DefaultSoundbank.bnk</Path>
@@ -239,15 +239,10 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-					<ActionPostEvent>
-						<ActionPostEventEntry Id="659920515" Name="KillAllMusic" ObjectPath="\Events\Default Work Unit\Music\KillAllMusic"/>
-					</ActionPostEvent>
 					<ActionSetState>
+						<ActionSetStateEntry Id="964811740" Name="Lv1" ObjectPath="\States\Default Work Unit\Level\Lv1"/>
 						<ActionSetStateEntry Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Game\Title"/>
 					</ActionSetState>
-					<ActionSetSwitch>
-						<ActionSetSwitchEntry Id="1684872406" Name="lv01" ObjectPath="\Switches\Default Work Unit\Level\lv01"/>
-					</ActionSetSwitch>
 				</Event>
 				<Event Id="3833651337" Name="jump" ObjectPath="\Events\Default Work Unit\Player\jump" DurationType="OneShot" DurationMin="0.911458" DurationMax="0.911458">
 					<IncludedMemoryFiles>
@@ -437,9 +432,6 @@
 				</StateGroup>
 			</StateGroups>
 			<SwitchGroups>
-				<SwitchGroup Id="1684872406" Name="lv01" ObjectPath="\Switches\Default Work Unit\Level\lv01">
-					<Switches/>
-				</SwitchGroup>
 				<SwitchGroup Id="4174463524" Name="Danger" ObjectPath="\Switches\Default Work Unit\Danger">
 					<Switches>
 						<Switch Id="2028414480" Name="pike" ObjectPath="\Switches\Default Work Unit\Danger\pike"/>
