@@ -344,6 +344,13 @@
 				<Folder Name="Player" ID="{FCC89298-88EC-45B9-BB46-7FBFB2F2A62B}" ShortID="345619183">
 					<ChildrenList>
 						<Sound Name="dash" ID="{FC05708D-C19B-4B98-AA42-D96A255E0E6C}" ShortID="215337773">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52F98F8D-BB21-4F88-AD05-144F45D8C5E5}"/>

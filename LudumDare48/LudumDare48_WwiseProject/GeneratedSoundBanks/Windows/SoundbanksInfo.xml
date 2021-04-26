@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1675065207" Language="SFX" Hash="4108175576">
+		<SoundBank Id="1675065207" Language="SFX" Hash="1144755183">
 			<ObjectPath>\SoundBanks\Default Work Unit\DefaultSoundbank</ObjectPath>
 			<ShortName>DefaultSoundbank</ShortName>
 			<Path>DefaultSoundbank.bnk</Path>
@@ -70,6 +70,11 @@
 							<Path>SFX\death_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="529726532" Name="End" ObjectPath="\Events\Default Work Unit\Music\End" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4158285989" Name="GameOver" ObjectPath="\States\Default Work Unit\Game\GameOver"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="2984404912" Name="InitMusic" ObjectPath="\Events\Default Work Unit\Music\InitMusic" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -236,6 +241,11 @@
 							<Media>
 								<File Id="399554981"/>
 								<File Id="502672451"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{89001BE9-C6C4-4C20-94A5-02A658E8E053}">
+							<Media>
+								<File Id="784971413"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -434,6 +444,9 @@
 					</States>
 				</StateGroup>
 				<StateGroup Id="3705726509" Name="Title" ObjectPath="\States\Default Work Unit\Game\Title">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4158285989" Name="GameOver" ObjectPath="\States\Default Work Unit\Game\GameOver">
 					<States/>
 				</StateGroup>
 			</StateGroups>

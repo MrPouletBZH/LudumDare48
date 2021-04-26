@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	303116883	outof_jump			\Default Work Unit\Player\outof_jump	
+	529726532	End			\Default Work Unit\Music\End	
 	659920515	KillAllMusic			\Default Work Unit\Music\KillAllMusic	
 	661747096	Play_collectible			\Default Work Unit\Collectibles\Play_collectible	
 	779278001	death			\Default Work Unit\Player\death	

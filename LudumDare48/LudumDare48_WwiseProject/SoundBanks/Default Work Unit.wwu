@@ -18,6 +18,7 @@
 						<ObjectRef Name="w2l2" ID="{ADC18935-93BC-4566-8BA0-0FD90587797E}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="slide_side" ID="{311A0519-E4EC-46BB-85F5-2E75A668EE70}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_collectible" ID="{F62249D2-1AC3-46ED-BD69-A523F209C0D2}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="End" ID="{2A49B03E-0324-480C-9460-B6CE402AE129}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="w3l2" ID="{96A12F1F-60F7-4AC9-B0BE-214BFBF1494B}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="jump" ID="{93DF1712-1925-4B65-885D-F04A0BD5A068}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="w3l1" ID="{A4E4A6CB-F243-4B6A-8F65-241C11B75196}" WorkUnitID="{8584B340-75B4-4BF5-B331-0F7B981F5C29}" Origin="Manual" Filter="7"/>

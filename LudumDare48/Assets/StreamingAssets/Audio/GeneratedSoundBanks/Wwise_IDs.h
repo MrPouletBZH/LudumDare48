@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID DANGER = 4174463524U;
         static const AkUniqueID DASH = 1942692385U;
         static const AkUniqueID DEATH = 779278001U;
+        static const AkUniqueID END = 529726532U;
         static const AkUniqueID INITMUSIC = 2984404912U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID KILLALLMUSIC = 659920515U;
