@@ -23,14 +23,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	4174463524	danger			\Default Work Unit\Level\danger	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	2782712965	Level			\Default Work Unit\Level	
 	4174463524	Danger			\Default Work Unit\Danger	
 	4237018540	Collectibles			\Default Work Unit\Collectibles	
 
 Switch	ID	Name	Switch Group			Notes
-	1684872404	lv03	Level			
-	1684872405	lv02	Level			
-	1684872406	lv01	Level			
 	540301611	lava	Danger			
 	2028414480	pike	Danger			
 	3963162363	chainsaw	Danger			
@@ -40,6 +36,7 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	702482391	Game			\Default Work Unit\Game	
+	2782712965	Level			\Default Work Unit\Level	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Game			
@@ -48,6 +45,10 @@ State	ID	Name	State Group			Notes
 	2412061574	World01	Game			
 	3705726509	Title	Game			
 	4158285989	GameOver	Game			
+	748895195	None	Level			
+	964811740	Lv1	Level			
+	964811742	Lv3	Level			
+	964811743	Lv2	Level			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	623062	W2Part03	D:\Game Jams\LD48\LudumDare48\LudumDare48\LudumDare48_WwiseProject\.cache\Windows\SFX\W2Part03_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\World02\w2p03\W2Part03\W2Part03		1789568

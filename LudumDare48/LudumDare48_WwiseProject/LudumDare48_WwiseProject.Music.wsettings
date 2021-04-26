@@ -87,7 +87,8 @@
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
 				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
-				<Property Name="Mixing Desk\CurrentStates\{BAC857EB-B96F-4C7D-B943-FD06D4B44895}" Type="string" Value="{ECE56560-12B6-45FF-926D-9D1B2CF77A8B}"/>
+				<Property Name="Mixing Desk\CurrentStates\{38B821A8-047D-4527-B4CF-86952B4C8529}" Type="string" Value="{EDFB2328-5E87-4521-A6F9-8E001A783004}"/>
+				<Property Name="Mixing Desk\CurrentStates\{BAC857EB-B96F-4C7D-B943-FD06D4B44895}" Type="string" Value="{2C79C0F3-3904-45B8-9A7A-FCD525D020B9}"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
@@ -104,6 +105,7 @@
 				<Property Name="Music Transition List\{4A50BC4C-0074-4405-A8C3-7DD166868AC8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{657B16EE-ED42-4E0A-A04C-3CEDAD430C46}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{669234E7-0800-42E0-8DC7-510BE713AD6B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{677F0660-643E-4A01-B1F6-371B3FC306B1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{6840BDF0-FF58-4ECD-BFFC-6EEAF6C24D95}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{747A6C24-C38B-45ED-9F23-F32ABA0E9CA0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{7FF425B2-C98C-4A42-BF3F-983C9EB5DAF7}\x64_Expand States" Type="string" Value=""/>
@@ -123,7 +125,7 @@
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{63F102C1-0607-4D35-9FEF-95745599672D}"/>
-				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{AA7D9BCD-E3A8-4A6B-8304-A309B95E5CC3}"/>
+				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{8584B340-75B4-4BF5-B331-0F7B981F5C29}"/>
 				<Property Name="ProjectExplorer\FirstVisible_5_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_7_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_9_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>

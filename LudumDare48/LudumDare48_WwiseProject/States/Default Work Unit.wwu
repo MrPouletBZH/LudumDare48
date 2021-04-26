@@ -13,6 +13,14 @@
 						<State Name="GameOver" ID="{89001BE9-C6C4-4C20-94A5-02A658E8E053}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Level" ID="{38B821A8-047D-4527-B4CF-86952B4C8529}">
+					<ChildrenList>
+						<State Name="None" ID="{77808197-85F8-4460-87DB-D13753EC08B7}"/>
+						<State Name="Lv1" ID="{673BD050-6007-4D38-8717-C863581727BB}"/>
+						<State Name="Lv2" ID="{EDFB2328-5E87-4521-A6F9-8E001A783004}"/>
+						<State Name="Lv3" ID="{AC8F3834-2801-4D84-A704-C86AD2142831}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
