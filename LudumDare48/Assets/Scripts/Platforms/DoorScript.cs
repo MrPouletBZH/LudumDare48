@@ -24,8 +24,8 @@ public class DoorScript : MonoBehaviour{
     private IEnumerator Starting(){
         yield return new WaitForSeconds(.3f);
         canMove = true;
-        yield return new WaitForSeconds(.7f);
-        player.GetComponent<PlayerMovements>().onMenu = false;
+        yield return new WaitForSeconds(.3f);
+        player.GetComponent<PlayerMovements>().enteringScene = false;
     }
 
 
