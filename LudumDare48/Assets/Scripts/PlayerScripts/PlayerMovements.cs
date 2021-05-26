@@ -1,14 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class PlayerMovements : MonoBehaviour
-{
+public class PlayerMovements : MonoBehaviour{
+    private PlayerInput playerInput;
+
     public Rigidbody2D rb;
-    private Collider2D bxCllder;
+    private BoxCollider2D bxCllder;
     private CapsuleCollider2D plgClldr;
     private Collider2D currentCollider;
+    private GameObject[] dashMovingPlatform;
+    private GameObject[] jumpMovingPlatform;
+    private GameObject inGameMenu;
+    private Keyboard kb;
+    private Gamepad gp;
+    private Vector2 movementVector; 
     [SerializeField] private LayerMask platformLayer = new LayerMask();
+
+    public AK.Wwise.Event deathEvent;
+    public AK.Wwise.Event jumpEvent;
+    public AK.Wwise.Event dashEvent;
+    public AK.Wwise.Event cantDashEvent;
+    public AK.Wwise.Event cantJumpEvent;
+    public AK.Wwise.Event SlideDashEvent;
+    public AK.Wwise.Event SlideJumpEvent;
+
 
     public static float movement;
     public float speed;
@@ -18,6 +35,8 @@ public class PlayerMovements : MonoBehaviour
     public float dashSpeed;
     private float jumpCounter;
     private float originalGravityScale;
+    public float crouchingModifier;
+    private float crouchingModifierPriv = 1;
     
     public int numberOfDash;
     public int numberOfJump;  
@@ -30,24 +49,14 @@ public class PlayerMovements : MonoBehaviour
     private bool directionBlocked = false;
     public bool enteringScene = true;
     public static bool landing = false;
-    public float crouchingModifier;
     private bool dead = false; 
     private bool itemTaken = false;
+    private bool stillJumping = false;
+
     private string success = "";
 
-    public AK.Wwise.Event deathEvent;
-    public AK.Wwise.Event jumpEvent;
-    public AK.Wwise.Event dashEvent;
-    public AK.Wwise.Event cantDashEvent;
-    public AK.Wwise.Event cantJumpEvent;
-    public AK.Wwise.Event SlideDashEvent;
-    public AK.Wwise.Event SlideJumpEvent;
-
-    private GameObject[] dashMovingPlatform;
-    private GameObject[] jumpMovingPlatform;
-    private GameObject inGameMenu;
-
     void Awake() {
+        movementVector = Vector2.zero;
         inGameMenu = GameObject.FindGameObjectWithTag("InGameMenu");
         inGameMenu.SetActive(false);
         dashMovingPlatform = GameObject.FindGameObjectsWithTag("DashMovingPlatform");
@@ -57,71 +66,72 @@ public class PlayerMovements : MonoBehaviour
         currentCollider = bxCllder;
         plgClldr.enabled = false;
         originalGravityScale = rb.gravityScale;
+        kb = InputSystem.GetDevice<Keyboard>();
+        gp = InputSystem.GetDevice<Gamepad>(); 
+
+        playerInput = transform.GetComponent<PlayerInput>();
+
+
+        playerInput.actions["Jump"].performed        += ctx => Jump();
+        playerInput.actions["Jump"].canceled         += ctx => AdaptativeJumpPower();
+        playerInput.actions["Dash"].performed        += ctx => Dashing();
+        playerInput.actions["Movement"].performed    += ctx => Moving(ctx.ReadValue<Vector2>());
+        playerInput.actions["Movement"].canceled     += ctx => Moving(Vector2.zero);
+        playerInput.actions["MovementBis"].performed += ctx => Moving(ctx.ReadValue<Vector2>());
+        playerInput.actions["MovementBis"].canceled  += ctx => Moving(Vector2.zero);
+        playerInput.actions["Restart"].performed     += ctx => Restart();
+        
+        playerInput.actions["JumpGamepad"].performed        += ctx => Jump();
+        playerInput.actions["JumpGamepad"].canceled         += ctx => AdaptativeJumpPower();
+        playerInput.actions["DashGamepad"].performed        += ctx => Dashing();
+        playerInput.actions["MovementGamepad"].performed    += ctx => Moving(ctx.ReadValue<Vector2>());
+        playerInput.actions["MovementGamepad"].canceled     += ctx => Moving(Vector2.zero);
+        playerInput.actions["MovementGamepadBis"].performed += ctx => Moving(ctx.ReadValue<Vector2>());
+        playerInput.actions["MovementGamepadBis"].canceled  += ctx => Moving(Vector2.zero);
+        playerInput.actions["RestartGamepad"].performed     += ctx => Restart();
     }
-    void Update(){
+    void Update() {
         if(!dead){
-            if (Input.GetKeyDown(KeyCode.Escape)){
+            if (kb.escapeKey.wasPressedThisFrame || gp.startButton.wasPressedThisFrame){
                 inGameMenu.SetActive(true);
                 Time.timeScale = 0;
             }
-
             isGrounded = Grounded();
-
-            if(!directionBlocked)
-                movement = Input.GetAxisRaw("Horizontal");
-            //Dash
-            if (!enteringScene && (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Backslash)) && dashAllowed && numberOfDash >0 && Time.timeScale!=0) {
-                dashEvent.Post(gameObject);
-                numberOfDash --;
-                isDashing = true;
-                dashAllowed = false;
-                jumpCounter = 0;
-                StartCoroutine(Dash());
-            }
-            else if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.Backslash)) && numberOfDash==0)
-                cantDashEvent.Post(gameObject);
-
-            //Jumping
-            if (!enteringScene && Input.GetKeyDown(KeyCode.Space) && !isDashing && numberOfJump>0) {
-                for(int i =0; i<jumpMovingPlatform.Length; i++){
-                    if (i == 0)
-                        SlideJumpEvent.Post(gameObject);
-                    jumpMovingPlatform[i].GetComponent<DashMovingPlatform>().SwitchingPosition();
-                }
-                jumpEvent.Post(gameObject);
-                numberOfJump --;
-                rb.velocity = Vector2.up * jumpSpeed;   
-                isJumping =true;
-                jumpCounter = jumpTime;
-            }
-            else if (Input.GetKeyDown(KeyCode.Space) && numberOfJump ==0)
-                cantJumpEvent.Post(gameObject);
-            
-            //Adaptative jump power
-            if (Input.GetKey(KeyCode.Space) && isJumping)
-                if (jumpCounter >0 ) {
-                    rb.velocity = Vector2.up * jumpSpeed;
-                    jumpCounter-=Time.deltaTime;
-                }
-                else 
-                    isJumping = false;
-
-            if (Input.GetKeyUp(KeyCode.Space))
-                isJumping = false;    
+            if (stillJumping)
+                rb.velocity = Vector2.up*jumpSpeed;
         }
         else{
             rb.velocity = Vector2.zero;
             rb.gravityScale = 0;
             movement = 0;
-        } 
+        }
     }
     void FixedUpdate() {
-        if(!enteringScene && !landing) {
-            if (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0)
-                transform.position += new Vector3(movement*speed,0,0)*Time.deltaTime*crouchingModifier;
-            else
-                transform.position += new Vector3(movement*speed,0,0)*Time.deltaTime;
+        if (!enteringScene && !landing){
+            transform.position += new Vector3(movement*speed*crouchingModifierPriv,0,0)*Time.deltaTime;
         }
+    }
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.tag == "JumpCollectible"){
+            Destroy(other.gameObject);
+            numberOfJump++;
+        }
+        else if (other.tag == "DashCollectible"){
+            Destroy(other.gameObject);
+            numberOfDash++;
+        }
+        else if (other.tag == "CompletionistCollectible"){
+            Destroy(other.gameObject);
+            itemTaken = true;
+            success = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<Completionist>().ObjectTaken();
+        }
+    }
+    void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.tag == "KillingObject") {
+            dead = true;
+            StartCoroutine(Death());
+        }
+            
     }
 
     private bool Grounded() {
@@ -129,6 +139,49 @@ public class PlayerMovements : MonoBehaviour
         if (retour&&rb.velocity.y==0)
             doubleJumpAllowed = true;
         return retour && doubleJumpAllowed;
+    }
+    private void Jump(){
+        if (!dead && !enteringScene && !isDashing && numberOfJump>0){
+            for(int i =0; i<jumpMovingPlatform.Length; i++){
+                if (i == 0)
+                    SlideJumpEvent.Post(gameObject);
+                jumpMovingPlatform[i].GetComponent<DashMovingPlatform>().SwitchingPosition();
+            }
+            jumpEvent.Post(gameObject);
+            numberOfJump --;
+            rb.velocity = Vector2.up * jumpSpeed; 
+            StartCoroutine(AdaptativeJump());  
+            isJumping =true;
+            jumpCounter = jumpTime;
+        }
+        else if (!dead && numberOfJump ==0)
+            cantJumpEvent.Post(gameObject);
+    }
+    private void AdaptativeJumpPower(){
+        StopCoroutine(AdaptativeJump());
+        stillJumping = false;
+    }
+    private void Dashing(){
+        if (!enteringScene && !dead && dashAllowed && numberOfDash >0 && Time.timeScale!=0) {
+                dashEvent.Post(gameObject);
+                numberOfDash --;
+                isDashing = true;
+                dashAllowed = false;
+                jumpCounter = 0;
+                StartCoroutine(Dash());
+            }
+            else if (!dead && numberOfDash==0)
+                cantDashEvent.Post(gameObject);
+    }
+    private void Moving(Vector2 dir){
+        movementVector = dir;
+        if (dir.x == 0) movement = 0;
+        else movement = dir.x<0? -1:1;
+        crouchingModifierPriv = dir.y<-0.5? crouchingModifier : 1;
+    }
+    private void Restart(){
+        dead = true;
+        StartCoroutine(Death());
     }
 
     private IEnumerator Dash() {
@@ -162,35 +215,15 @@ public class PlayerMovements : MonoBehaviour
         yield return new WaitForSeconds(.02f);
         dashAllowed = true;
     }
-
-    void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "JumpCollectible"){
-            Destroy(other.gameObject);
-            numberOfJump++;
-        }
-        else if (other.tag == "DashCollectible"){
-            Destroy(other.gameObject);
-            numberOfDash++;
-        }
-        else if (other.tag == "CompletionistCollectible"){
-            Destroy(other.gameObject);
-            itemTaken = true;
-            success = GameObject.FindGameObjectWithTag("ScriptHolder").GetComponent<Completionist>().ObjectTaken();
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "KillingObject") {
-            dead = true;
-            StartCoroutine(Death());
-        }
-            
-    }
-
     private IEnumerator Death(){
-    deathEvent.Post(gameObject);
-    yield return new WaitForSeconds(0.35f);
-    inGameMenu.GetComponent<InGameMenu>().RestartLevel();
+        deathEvent.Post(gameObject);
+        yield return new WaitForSeconds(0.35f);
+        inGameMenu.GetComponent<InGameMenu>().RestartLevel();
+    }
+    private IEnumerator AdaptativeJump(){
+        stillJumping = true;
+        yield return new WaitForSeconds(jumpTime);
+        stillJumping = false;
     }
 
     public bool GetIsDashing(){
@@ -202,7 +235,7 @@ public class PlayerMovements : MonoBehaviour
     }
 
     public bool GetIsJumping(){
-        return !Grounded();
+        return !(rb.velocity.y>-0.01 && rb.velocity.y<0.01);
     }
 
     public bool getEnteringScene(){
@@ -217,5 +250,9 @@ public class PlayerMovements : MonoBehaviour
 
     public bool GetItemTaken(){
         return itemTaken;
+    }
+
+    public Vector2 getMovement(){
+        return movementVector;
     }
 }

@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class PlayerAnimationController : MonoBehaviour
-{
+public class PlayerAnimationController : MonoBehaviour{
+
     private Animator animator;
     private bool crouching = false;
     private bool jumping = false; 
     private bool dashing = false; 
+    private Vector2 movement;
     private PlayerMovements playerMovements;
     void Start(){
         playerMovements = transform.GetComponent<PlayerMovements>();
@@ -15,11 +17,12 @@ public class PlayerAnimationController : MonoBehaviour
     }
 
     void Update(){
+        movement = playerMovements.getMovement();
         if (!playerMovements.getEnteringScene())
-            animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+            animator.SetFloat("Speed", Mathf.Abs(movement.x));
         animator.SetFloat("Yvelocity", transform.GetComponent<Rigidbody2D>().velocity.y);
         animator.SetBool("Grounded", playerMovements.getIsGrounded());
-        animator.SetFloat("VerticalSpeed", Mathf.Abs(Input.GetAxisRaw("Vertical")));
+        animator.SetFloat("VerticalSpeed", Mathf.Abs(movement.y));
         animator.SetBool("Dead", playerMovements.getDead());
 
         if (Dashing() && !dashing) {
@@ -65,7 +68,7 @@ public class PlayerAnimationController : MonoBehaviour
     }
 
     private bool Crouching() {
-        return (Input.GetKey(KeyCode.C) || Input.GetAxisRaw("Vertical")<0);
+        return (movement.y<-0.5);
     }
 
     private bool Jumping() {

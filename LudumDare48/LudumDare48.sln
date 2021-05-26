@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.Timeline", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{a6f7901d-88d5-bf54-b79c-a05596caedf3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InputSystem.RebindingUI", "Unity.InputSystem.RebindingUI.csproj", "{45436dab-2176-7ffe-30ee-8cf7789814ac}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.API.Editor", "AK.Wwise.Unity.API.Editor.csproj", "{fad08e4a-c1fd-9cb0-3444-7d7bd2a3aa40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AK.Wwise.Unity.MonoBehaviour.Editor", "AK.Wwise.Unity.MonoBehaviour.Editor.csproj", "{72d912d4-af81-873a-6eac-81c4a31990d3}"
@@ -36,6 +38,8 @@ Global
 		{b3e05070-fe7e-6697-464e-b10c0a6a1620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a6f7901d-88d5-bf54-b79c-a05596caedf3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{a6f7901d-88d5-bf54-b79c-a05596caedf3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45436dab-2176-7ffe-30ee-8cf7789814ac}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45436dab-2176-7ffe-30ee-8cf7789814ac}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{fad08e4a-c1fd-9cb0-3444-7d7bd2a3aa40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{fad08e4a-c1fd-9cb0-3444-7d7bd2a3aa40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72d912d4-af81-873a-6eac-81c4a31990d3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

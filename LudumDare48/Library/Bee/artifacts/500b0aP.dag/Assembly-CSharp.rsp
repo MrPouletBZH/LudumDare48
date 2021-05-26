@@ -295,6 +295,7 @@
 "Assets/init.cs"
 "Assets/Scripts/Completionist.cs"
 "Assets/Scripts/InitMusic.cs"
+"Assets/Scripts/Menus/ChangeResolution.cs"
 "Assets/Scripts/Menus/InGameMenu.cs"
 "Assets/Scripts/Menus/MainMenu.cs"
 "Assets/Scripts/MusicTrigger.cs"

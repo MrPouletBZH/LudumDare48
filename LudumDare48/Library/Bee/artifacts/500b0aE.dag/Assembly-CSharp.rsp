@@ -103,7 +103,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/2021.1.4f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -322,6 +322,7 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.2D.SpriteShape.Editor.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.2D.SpriteShape.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.2D.Tilemap.Editor.ref.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.InternalAPIEditorBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.Mathematics.Editor.ref.dll"
@@ -337,10 +338,14 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/EndingScript.cs"
 "Assets/init.cs"
+"Assets/Input/InputMaster.cs"
 "Assets/Scripts/Completionist.cs"
 "Assets/Scripts/InitMusic.cs"
+"Assets/Scripts/Menus/ChangeResolution.cs"
 "Assets/Scripts/Menus/InGameMenu.cs"
 "Assets/Scripts/Menus/MainMenu.cs"
+"Assets/Scripts/Menus/MenuSwitch.cs"
+"Assets/Scripts/Menus/ResetAll.cs"
 "Assets/Scripts/MusicTrigger.cs"
 "Assets/Scripts/Platforms/ConveyorBelt.cs"
 "Assets/Scripts/Platforms/DashMovingPlatform.cs"

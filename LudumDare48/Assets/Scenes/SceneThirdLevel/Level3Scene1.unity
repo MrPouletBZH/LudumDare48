@@ -215,6 +215,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6145cf233f1323f48a2f4870b06bb908,
         type: 3}
+    - target: {fileID: 5572844323061477123, guid: 86f51e4c6610bcd4dbe803aa4ba07f0a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5935699242349732535, guid: 86f51e4c6610bcd4dbe803aa4ba07f0a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,6 +344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6891812857394295778, guid: 86f51e4c6610bcd4dbe803aa4ba07f0a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86f51e4c6610bcd4dbe803aa4ba07f0a, type: 3}
@@ -3200,7 +3210,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
