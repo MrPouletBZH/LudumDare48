@@ -9,10 +9,10 @@ public class DoorScript : MonoBehaviour{
     private bool canMove =false;
     public float speed;
 
-    void Awake() {
-        player = GameObject.FindGameObjectWithTag("Player");
+    void Start() {
         door = transform.GetChild(0);
         target = transform.GetChild(1);
+        player = init.player;
         StartCoroutine(Starting());
     }
 

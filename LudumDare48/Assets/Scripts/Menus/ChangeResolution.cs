@@ -6,12 +6,21 @@ using UnityEngine.UI;
 using TMPro;
 
 public class ChangeResolution : MonoBehaviour{
-    public TMP_Dropdown resolutionDropdown;
-    public Toggle fullscreen;
+    [SerializeField] private TMP_Dropdown resolutionDropdown;
+    [SerializeField] private Toggle fullscreen;
     List<Resolution> resolutions;
     private List<string> resolutionsString;
+    private int currentHeight;
+    private int currentWidth;
 
     void Start() {
+        currentHeight = PlayerPrefs.GetInt("Height");
+        currentWidth = PlayerPrefs.GetInt("Width");
+        if(currentHeight==0){
+            currentHeight = Screen.currentResolution.height;
+            currentWidth = Screen.currentResolution.width;
+        }
+        
         fullscreen.isOn = Screen.fullScreen;
 
         resolutions = Screen.resolutions.ToList();
@@ -32,7 +41,7 @@ public class ChangeResolution : MonoBehaviour{
         }
 
         for(int i = 0; i<resolutions.Count; i++)
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == currentWidth && resolutions[i].height == currentHeight)
                 currentResolution = i;
 
         resolutionDropdown.AddOptions(resolutionsString.ToList());
@@ -42,6 +51,8 @@ public class ChangeResolution : MonoBehaviour{
 
     public void ResolutionChanged(int index){
         Resolution res = resolutions[index];
+        PlayerPrefs.SetInt("Height", res.height);
+        PlayerPrefs.SetInt("Width", res.width);
         Screen.SetResolution(res.width, res.height, Screen.fullScreen);        
     }
     public void ScreenModeChanged(bool fullScreen){

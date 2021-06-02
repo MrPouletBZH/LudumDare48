@@ -9,7 +9,6 @@ public class ConveyorBelt : MonoBehaviour{
         if (other.gameObject.GetComponent<Rigidbody2D>()!= null) {
             int direction = leftToRight? 3:-3;
             other.transform.position += Vector3.right*direction*Time.deltaTime;
-            //other.gameObject.GetComponent<Rigidbody2D>().velocity += new Vector2(5*direction, 0);
         }
     }
 }

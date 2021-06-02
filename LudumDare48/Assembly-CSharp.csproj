@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovements.cs" />
      <Compile Include="Assets\Scripts\Menus\InGameMenu.cs" />
      <Compile Include="Assets\Scripts\Platforms\ExitScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerSpawnPos.cs" />
      <Compile Include="Assets\Scripts\InitMusic.cs" />
      <Compile Include="Assets\Input\InputMaster.cs" />
      <Compile Include="Assets\Scripts\Platforms\DashMovingPlatform.cs" />
@@ -55,9 +56,10 @@
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerAnimationController.cs" />
      <Compile Include="Assets\Scripts\Platforms\SetParentPlatform.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\FlipSprite.cs" />
+     <Compile Include="Assets\Scripts\Menus\ResetAll.cs" />
      <Compile Include="Assets\Scripts\MusicTrigger.cs" />
      <Compile Include="Assets\Scripts\Menus\ChangeResolution.cs" />
-     <Compile Include="Assets\Scripts\Menus\ResetAll.cs" />
+     <Compile Include="Assets\Scripts\CameraAdapter.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

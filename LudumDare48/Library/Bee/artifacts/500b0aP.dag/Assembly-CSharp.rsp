@@ -92,7 +92,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/2021.1.4f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
@@ -286,6 +286,7 @@
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.2D.IK.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.2D.PixelPerfect.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.2D.SpriteShape.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/500b0aP.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/500b0aP.dag/Unity.TextMeshPro.ref.dll"
@@ -293,11 +294,15 @@
 -r:"Library/Bee/artifacts/500b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/EndingScript.cs"
 "Assets/init.cs"
+"Assets/Input/InputMaster.cs"
+"Assets/Scripts/CameraAdapter.cs"
 "Assets/Scripts/Completionist.cs"
 "Assets/Scripts/InitMusic.cs"
 "Assets/Scripts/Menus/ChangeResolution.cs"
 "Assets/Scripts/Menus/InGameMenu.cs"
 "Assets/Scripts/Menus/MainMenu.cs"
+"Assets/Scripts/Menus/MenuSwitch.cs"
+"Assets/Scripts/Menus/ResetAll.cs"
 "Assets/Scripts/MusicTrigger.cs"
 "Assets/Scripts/Platforms/ConveyorBelt.cs"
 "Assets/Scripts/Platforms/DashMovingPlatform.cs"
@@ -308,6 +313,7 @@
 "Assets/Scripts/PlayerScripts/FlipSprite.cs"
 "Assets/Scripts/PlayerScripts/PlayerAnimationController.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovements.cs"
+"Assets/Scripts/PlayerScripts/PlayerSpawnPos.cs"
 "Assets/Scripts/PlayerScripts/SoundManager.cs"
 "Assets/Scripts/SoundMaterial.cs"
 -langversion:8.0

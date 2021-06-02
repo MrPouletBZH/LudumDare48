@@ -9,6 +9,7 @@ public class PlayerAnimationController : MonoBehaviour{
     private bool crouching = false;
     private bool jumping = false; 
     private bool dashing = false; 
+    private bool grounded;
     private Vector2 movement;
     private PlayerMovements playerMovements;
     void Start(){
@@ -21,7 +22,6 @@ public class PlayerAnimationController : MonoBehaviour{
         if (!playerMovements.getEnteringScene())
             animator.SetFloat("Speed", Mathf.Abs(movement.x));
         animator.SetFloat("Yvelocity", transform.GetComponent<Rigidbody2D>().velocity.y);
-        animator.SetBool("Grounded", playerMovements.getIsGrounded());
         animator.SetFloat("VerticalSpeed", Mathf.Abs(movement.y));
         animator.SetBool("Dead", playerMovements.getDead());
 

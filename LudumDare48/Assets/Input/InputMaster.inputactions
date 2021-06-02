@@ -157,7 +157,7 @@
                     "name": "",
                     "id": "82dfd53b-6672-49f0-91da-63b64daa7f8f",
                     "path": "<Keyboard>/r",
-                    "interactions": "Hold",
+                    "interactions": "Hold(duration=0.75)",
                     "processors": "",
                     "groups": "Player",
                     "action": "Restart",

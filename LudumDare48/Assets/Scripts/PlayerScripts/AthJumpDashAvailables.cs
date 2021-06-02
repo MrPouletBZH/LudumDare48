@@ -8,7 +8,7 @@ public class AthJumpDashAvailables : MonoBehaviour{
     private GameObject dashAvailables;
     private GameObject jumpAvailables;
     void Start() {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovements>();
+        player = init.player.GetComponent<PlayerMovements>();
         dashAvailables = transform.GetChild(2).gameObject;
         jumpAvailables = transform.GetChild(1).gameObject;
     }

@@ -6,15 +6,22 @@ using UnityEngine.SceneManagement;
 public class ExitScript : MonoBehaviour{
     public string scene;
     public bool endingScene;
+    private PlayerMovements playerMovements;
+    void Start() {
+        playerMovements = transform.GetComponent<PlayerMovements>();
+    }
     void OnTriggerEnter2D(Collider2D other) {
         if (other.tag == "Exit"){
-            if(transform.GetComponent<PlayerMovements>().GetItemTaken())
-                PlayerPrefs.SetString(transform.GetComponent<PlayerMovements>().GetSuccess(), "taken");
+            if(playerMovements.GetItemTaken())
+                PlayerPrefs.SetString(playerMovements.GetSuccess(), "taken");
 
             if (endingScene)
                 StartCoroutine(Ending());
-            else
+            else{
+                transform.SetParent(null);
+                DontDestroyOnLoad(gameObject);
                 SceneManager.LoadScene(scene);
+            }
         }
     }
 

@@ -21,11 +21,11 @@ GameObject:
   - component: {fileID: 8394130645567141418}
   - component: {fileID: 9047650371560518684}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1320567890074033695
 Transform:
@@ -108,7 +108,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.33
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -126,7 +126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a368485536cb4514bbf8ba221b4047c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1320567890074033690}
   platformLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -166,8 +165,8 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 533655ae5aa7cd349bcac10b182971a6,
       type: 2}
   speed: 5
-  jumpSpeed: 6
-  jumpTime: 0.2
+  jumpSpeed: 5.5
+  jumpTime: 0.3
   dashDuration: 0.18
   dashSpeed: 12
   crouchingModifier: 0.5
@@ -266,7 +265,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0038050413, y: -0.06783295}
+  m_Offset: {x: -0.01728174, y: -0.06783295}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -277,7 +276,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.193175, y: 3.058216}
+  m_Size: {x: 1.3497202, y: 3.058216}
   m_EdgeRadius: 0
 --- !u!70 &8394130645567141418
 CapsuleCollider2D:
@@ -292,8 +291,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08873224, y: -0.34333935}
-  m_Size: {x: 2.949744, y: 2.5036242}
+  m_Offset: {x: 0.08873224, y: -0.33109158}
+  m_Size: {x: 2.9497447, y: 2.4056828}
   m_Direction: 1
 --- !u!114 &9047650371560518684
 MonoBehaviour:

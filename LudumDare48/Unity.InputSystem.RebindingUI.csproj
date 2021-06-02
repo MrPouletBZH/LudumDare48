@@ -36,9 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Samples\Input System\1.1.0-preview.3\Rebinding UI\RebindActionUIEditor.cs" />
      <Compile Include="Assets\Samples\Input System\1.1.0-preview.3\Rebinding UI\RebindSaveLoad.cs" />
      <Compile Include="Assets\Samples\Input System\1.1.0-preview.3\Rebinding UI\RebindActionUI.cs" />
+     <Compile Include="Assets\Samples\Input System\1.1.0-preview.3\Rebinding UI\RebindActionUIEditor.cs" />
      <Compile Include="Assets\Samples\Input System\1.1.0-preview.3\Rebinding UI\GamepadIconsExample.cs" />
      <None Include="Assets\Samples\Input System\1.1.0-preview.3\Rebinding UI\Unity.InputSystem.RebindingUI.asmdef" />
     <Reference Include="UnityEngine">

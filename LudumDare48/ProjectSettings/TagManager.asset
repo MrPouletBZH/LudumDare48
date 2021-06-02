@@ -14,6 +14,8 @@ TagManager:
   - InGameMenu
   - Exit
   - CanvasEnd
+  - DuplicateWarning
+  - WwiseGlobal
   layers:
   - Default
   - TransparentFX

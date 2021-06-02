@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class init : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static GameObject player;
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         SceneManager.LoadScene("MainMenuScene");
     }
 

@@ -339,6 +339,7 @@
 "Assets/EndingScript.cs"
 "Assets/init.cs"
 "Assets/Input/InputMaster.cs"
+"Assets/Scripts/CameraAdapter.cs"
 "Assets/Scripts/Completionist.cs"
 "Assets/Scripts/InitMusic.cs"
 "Assets/Scripts/Menus/ChangeResolution.cs"
@@ -356,6 +357,7 @@
 "Assets/Scripts/PlayerScripts/FlipSprite.cs"
 "Assets/Scripts/PlayerScripts/PlayerAnimationController.cs"
 "Assets/Scripts/PlayerScripts/PlayerMovements.cs"
+"Assets/Scripts/PlayerScripts/PlayerSpawnPos.cs"
 "Assets/Scripts/PlayerScripts/SoundManager.cs"
 "Assets/Scripts/SoundMaterial.cs"
 -langversion:8.0
